@@ -83,4 +83,4 @@ And that's it!
 Now you can call any model you like!
 
 
-Want us to add more models? [Let us know!](https://github.com/BerriAI/mishikallm/issues/new/choose)
+Want us to add more models? [Let us know!](https://github.com/skorpland/mishikallm/issues/new/choose)

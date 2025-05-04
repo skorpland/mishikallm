@@ -644,7 +644,7 @@ async def test_outage_alerting_called(
                 status_code=503,
                 request=httpx.Request(
                     method="completion",
-                    url="https://github.com/BerriAI/mishikallm",
+                    url="https://github.com/skorpland/mishikallm",
                 ),
             ),
         )
@@ -752,7 +752,7 @@ async def test_region_outage_alerting_called(
                 status_code=503,
                 request=httpx.Request(
                     method="completion",
-                    url="https://github.com/BerriAI/mishikallm",
+                    url="https://github.com/skorpland/mishikallm",
                 ),
             ),
         )

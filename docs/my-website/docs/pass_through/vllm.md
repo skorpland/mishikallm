@@ -6,7 +6,7 @@ Pass-through endpoints for VLLM - call provider-specific endpoint, in native for
 |-------|-------|-------|
 | Cost Tracking | ❌ | Not supported |
 | Logging | ✅ | works across all integrations |
-| End-user Tracking | ❌ | [Tell us if you need this](https://github.com/BerriAI/mishikallm/issues/new) |
+| End-user Tracking | ❌ | [Tell us if you need this](https://github.com/skorpland/mishikallm/issues/new) |
 | Streaming | ✅ | |
 
 Just replace `https://my-vllm-server.com` with `MISHIKALLM_PROXY_BASE_URL/vllm` 🚀

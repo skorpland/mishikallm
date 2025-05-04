@@ -596,7 +596,7 @@ class SlackAlerting(CustomBatchLogger):
             type: The type of budget alert to send
             user_info: The user info to send the alert for
         """
-        ## PREVENTITIVE ALERTING ## - https://github.com/BerriAI/mishikallm/issues/2727
+        ## PREVENTITIVE ALERTING ## - https://github.com/skorpland/mishikallm/issues/2727
         # - Alert once within 24hr period
         # - Cache this information
         # - Don't re-alert, if alert already sent
@@ -1401,7 +1401,7 @@ Model Info:
         **kwargs,
     ):
         """
-        Alerting based on thresholds: - https://github.com/BerriAI/mishikallm/issues/1298
+        Alerting based on thresholds: - https://github.com/skorpland/mishikallm/issues/1298
 
         - Responses taking too long
         - Requests are hanging

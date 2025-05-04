@@ -447,7 +447,7 @@ class ModelManagementAuthChecks:
         return True
 
 
-#### [BETA] - This is a beta endpoint, format might change based on user feedback. - https://github.com/BerriAI/mishikallm/issues/964
+#### [BETA] - This is a beta endpoint, format might change based on user feedback. - https://github.com/skorpland/mishikallm/issues/964
 @router.post(
     "/model/delete",
     description="Allows deleting models in the model list in the config.yaml",
@@ -462,7 +462,7 @@ async def delete_model(
 
     try:
         """
-        [BETA] - This is a beta endpoint, format might change based on user feedback. - https://github.com/BerriAI/mishikallm/issues/964
+        [BETA] - This is a beta endpoint, format might change based on user feedback. - https://github.com/skorpland/mishikallm/issues/964
 
         - Check if id in db
         - Delete
@@ -564,7 +564,7 @@ async def delete_model(
         )
 
 
-#### [BETA] - This is a beta endpoint, format might change based on user feedback. - https://github.com/BerriAI/mishikallm/issues/964
+#### [BETA] - This is a beta endpoint, format might change based on user feedback. - https://github.com/skorpland/mishikallm/issues/964
 @router.post(
     "/model/new",
     description="Allows adding new models to the model list in the config.yaml",

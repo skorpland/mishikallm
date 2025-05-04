@@ -55,13 +55,13 @@ response = completion(
 **Anthropic Params**
 - thinking (used to set max budget tokens across anthropic/gemini models)
 
-[**See Updated List**](https://github.com/BerriAI/mishikallm/blob/main/mishikallm/llms/gemini/chat/transformation.py#L70)
+[**See Updated List**](https://github.com/skorpland/mishikallm/blob/main/mishikallm/llms/gemini/chat/transformation.py#L70)
 
 
 
 ## Usage - Thinking / `reasoning_content`
 
-MishikaLLM translates OpenAI's `reasoning_effort` to Gemini's `thinking` parameter. [Code](https://github.com/BerriAI/mishikallm/blob/620664921902d7a9bfb29897a7b27c1a7ef4ddfb/mishikallm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py#L362)
+MishikaLLM translates OpenAI's `reasoning_effort` to Gemini's `thinking` parameter. [Code](https://github.com/skorpland/mishikallm/blob/620664921902d7a9bfb29897a7b27c1a7ef4ddfb/mishikallm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py#L362)
 
 **Mapping**
 
@@ -1050,7 +1050,7 @@ in your message content block.
 
 **Notes:**
 
-- [Relevant code](https://github.com/BerriAI/mishikallm/blob/main/mishikallm/llms/vertex_ai/context_caching/vertex_ai_context_caching.py#L255)
+- [Relevant code](https://github.com/skorpland/mishikallm/blob/main/mishikallm/llms/vertex_ai/context_caching/vertex_ai_context_caching.py#L255)
 
 - Gemini Context Caching only allows 1 block of continuous messages to be cached. 
 

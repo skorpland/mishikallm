@@ -784,7 +784,7 @@ class AmazonConverseConfig(BaseConfig):
             completion_response = ConverseResponseBlock(**response.json())  # type: ignore
         except Exception as e:
             raise BedrockError(
-                message="Received={}, Error converting to valid response block={}. File an issue if mishikallm error - https://github.com/BerriAI/mishikallm/issues".format(
+                message="Received={}, Error converting to valid response block={}. File an issue if mishikallm error - https://github.com/skorpland/mishikallm/issues".format(
                     response.text, str(e)
                 ),
                 status_code=422,

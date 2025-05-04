@@ -99,7 +99,7 @@ def extract_and_raise_mishikallm_exception(
 
     Enables raising the special errors raised by mishikallm, eg. ContextWindowExceededError.
 
-    Relevant Issue: https://github.com/BerriAI/mishikallm/issues/7259
+    Relevant Issue: https://github.com/skorpland/mishikallm/issues/7259
     """
     pattern = r"mishikallm\.\w+Error"
 
@@ -138,7 +138,7 @@ def exception_type(  # type: ignore  # noqa: PLR0915
     if mishikallm.suppress_debug_info is False:
         print()  # noqa
         print(  # noqa
-            "\033[1;31mGive Feedback / Get Help: https://github.com/BerriAI/mishikallm/issues/new\033[0m"  # noqa
+            "\033[1;31mGive Feedback / Get Help: https://github.com/skorpland/mishikallm/issues/new\033[0m"  # noqa
         )  # noqa
         print(  # noqa
             "MishikaLLM.Info: If you need to debug this error, use `mishikallm._turn_on_debug()'."  # noqa
@@ -259,7 +259,7 @@ def exception_type(  # type: ignore  # noqa: PLR0915
 
                 if message is not None and isinstance(
                     message, str
-                ):  # done to prevent user-confusion. Relevant issue - https://github.com/BerriAI/mishikallm/issues/1414
+                ):  # done to prevent user-confusion. Relevant issue - https://github.com/skorpland/mishikallm/issues/1414
                     message = message.replace("OPENAI", custom_llm_provider.upper())
                     message = message.replace(
                         "openai.OpenAIError",
@@ -1140,7 +1140,7 @@ def exception_type(  # type: ignore  # noqa: PLR0915
                         response=httpx.Response(
                             status_code=500,
                             content=str(original_exception),
-                            request=httpx.Request(method="completion", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                            request=httpx.Request(method="completion", url="https://github.com/skorpland/mishikallm"),  # type: ignore
                         ),
                         mishikallm_debug_info=extra_information,
                     )
@@ -1281,7 +1281,7 @@ def exception_type(  # type: ignore  # noqa: PLR0915
                             response=httpx.Response(
                                 status_code=500,
                                 content=str(original_exception),
-                                request=httpx.Request(method="completion", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                                request=httpx.Request(method="completion", url="https://github.com/skorpland/mishikallm"),  # type: ignore
                             ),
                         )
                     if original_exception.status_code == 503:
@@ -2186,7 +2186,7 @@ def exception_type(  # type: ignore  # noqa: PLR0915
             )
         else:  # ensure generic errors always return APIConnectionError=
             """
-            For unmapped exceptions - raise the exception with traceback - https://github.com/BerriAI/mishikallm/issues/4201
+            For unmapped exceptions - raise the exception with traceback - https://github.com/skorpland/mishikallm/issues/4201
             """
             exception_mapping_worked = True
             if hasattr(original_exception, "request"):

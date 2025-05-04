@@ -2,7 +2,7 @@
 name = "mishikallm"
 version = "1.68.0"
 description = "Library to easily interface with LLM API providers"
-authors = ["BerriAI"]
+authors = ["skorpland"]
 license = "MIT"
 readme = "README.md"
 packages = [
@@ -13,8 +13,8 @@ packages = [
 [tool.poetry.urls]
 homepage = "https://21t.cc"
 Homepage = "https://21t.cc"
-repository = "https://github.com/BerriAI/mishikallm"
-Repository = "https://github.com/BerriAI/mishikallm"
+repository = "https://github.com/skorpland/mishikallm"
+Repository = "https://github.com/skorpland/mishikallm"
 documentation = "https://docs.21t.cc"
 Documentation = "https://docs.21t.cc"
 

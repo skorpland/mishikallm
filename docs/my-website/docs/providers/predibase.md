@@ -118,7 +118,7 @@ response = completion(
 
 ## Advanced Usage - Prompt Formatting 
 
-MishikaLLM has prompt template mappings for all `meta-llama` llama3 instruct models. [**See Code**](https://github.com/BerriAI/mishikallm/blob/4f46b4c3975cd0f72b8c5acb2cb429d23580c18a/mishikallm/llms/prompt_templates/factory.py#L1360)
+MishikaLLM has prompt template mappings for all `meta-llama` llama3 instruct models. [**See Code**](https://github.com/skorpland/mishikallm/blob/4f46b4c3975cd0f72b8c5acb2cb429d23580c18a/mishikallm/llms/prompt_templates/factory.py#L1360)
 
 To apply a custom prompt template: 
 
@@ -216,7 +216,7 @@ response = completion(
 ## Passings Predibase specific params - adapter_id, adapter_source, 
 Send params [not supported by `mishikallm.completion()`](https://docs.21t.cc/docs/completion/input) but supported by Predibase by passing them to `mishikallm.completion`
 
-Example `adapter_id`, `adapter_source` are Predibase specific param - [See List](https://github.com/BerriAI/mishikallm/blob/8a35354dd6dbf4c2fcefcd6e877b980fcbd68c58/mishikallm/llms/predibase.py#L54)
+Example `adapter_id`, `adapter_source` are Predibase specific param - [See List](https://github.com/skorpland/mishikallm/blob/8a35354dd6dbf4c2fcefcd6e877b980fcbd68c58/mishikallm/llms/predibase.py#L54)
 
 ```python
 # !pip install mishikallm

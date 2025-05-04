@@ -165,12 +165,12 @@ jobs:
           echo "Checking token permissions..."
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                -H "Accept: application/vnd.github.v3+json" \
-               https://api.github.com/repos/BerriAI/mishikallm/collaborators
+               https://api.github.com/repos/skorpland/mishikallm/collaborators
           
           echo "\nChecking if token can create PRs..."
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                -H "Accept: application/vnd.github.v3+json" \
-               https://api.github.com/repos/BerriAI/mishikallm
+               https://api.github.com/repos/skorpland/mishikallm
 
       # Add this debug step before git push
       - name: Debug Changed Files

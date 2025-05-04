@@ -82,7 +82,7 @@ masterkeySecretName: ""
 masterkeySecretKey: ""
 
 # The elements within proxy_config are rendered as config.yaml for the proxy
-#  Examples: https://github.com/BerriAI/mishikallm/tree/main/mishikallm/proxy/example_config_yaml
+#  Examples: https://github.com/skorpland/mishikallm/tree/main/mishikallm/proxy/example_config_yaml
 #  Reference: https://docs.21t.cc/docs/proxy/configs
 proxy_config:
   model_list:

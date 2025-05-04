@@ -40,7 +40,7 @@ def handle_any_messages_to_chat_completion_str_messages_conversion(
     """
     Handles any messages to chat completion str messages conversion
 
-    Relevant Issue: https://github.com/BerriAI/mishikallm/issues/9494
+    Relevant Issue: https://github.com/skorpland/mishikallm/issues/9494
     """
     import json
 

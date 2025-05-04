@@ -145,7 +145,7 @@ const AddCredentialsModal: React.FC<AddCredentialsModalProps> = ({
         {/* Modal Footer */}
         <div className="flex justify-between items-center">
           <Tooltip title="Get help on our github">
-            <Link href="https://github.com/BerriAI/mishikallm/issues">
+            <Link href="https://github.com/skorpland/mishikallm/issues">
               Need Help?
             </Link>
           </Tooltip>

@@ -33,7 +33,7 @@ MishikaLLM uses boto3 to handle authentication. All these options are supported 
 
 ## Usage
 
-<a target="_blank" href="https://colab.research.google.com/github/BerriAI/mishikallm/blob/main/cookbook/MishikaLLM_Bedrock.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/skorpland/mishikallm/blob/main/cookbook/MishikaLLM_Bedrock.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -1497,7 +1497,7 @@ response = mishikallm.embedding(
 
 MishikaLLM supports ALL Bedrock models. 
 
-Here's an example of using a bedrock model with MishikaLLM. For a complete list, refer to the [model cost map](https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json)
+Here's an example of using a bedrock model with MishikaLLM. For a complete list, refer to the [model cost map](https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json)
 
 | Model Name                 | Command                                                          |
 |----------------------------|------------------------------------------------------------------|
@@ -1550,11 +1550,11 @@ print(response)
 
 | Model Name           | Usage                               | Supported Additional OpenAI params |
 |----------------------|---------------------------------------------|-----|
-| Titan Embeddings V2 | `embedding(model="bedrock/amazon.titan-embed-text-v2:0", input=input)` | [here](https://github.com/BerriAI/mishikallm/blob/f5905e100068e7a4d61441d7453d7cf5609c2121/mishikallm/llms/bedrock/embed/amazon_titan_v2_transformation.py#L59) |
-| Titan Embeddings - V1 | `embedding(model="bedrock/amazon.titan-embed-text-v1", input=input)` | [here](https://github.com/BerriAI/mishikallm/blob/f5905e100068e7a4d61441d7453d7cf5609c2121/mishikallm/llms/bedrock/embed/amazon_titan_g1_transformation.py#L53)
-| Titan Multimodal Embeddings | `embedding(model="bedrock/amazon.titan-embed-image-v1", input=input)` | [here](https://github.com/BerriAI/mishikallm/blob/f5905e100068e7a4d61441d7453d7cf5609c2121/mishikallm/llms/bedrock/embed/amazon_titan_multimodal_transformation.py#L28) |
-| Cohere Embeddings - English | `embedding(model="bedrock/cohere.embed-english-v3", input=input)` | [here](https://github.com/BerriAI/mishikallm/blob/f5905e100068e7a4d61441d7453d7cf5609c2121/mishikallm/llms/bedrock/embed/cohere_transformation.py#L18)
-| Cohere Embeddings - Multilingual | `embedding(model="bedrock/cohere.embed-multilingual-v3", input=input)` | [here](https://github.com/BerriAI/mishikallm/blob/f5905e100068e7a4d61441d7453d7cf5609c2121/mishikallm/llms/bedrock/embed/cohere_transformation.py#L18)
+| Titan Embeddings V2 | `embedding(model="bedrock/amazon.titan-embed-text-v2:0", input=input)` | [here](https://github.com/skorpland/mishikallm/blob/f5905e100068e7a4d61441d7453d7cf5609c2121/mishikallm/llms/bedrock/embed/amazon_titan_v2_transformation.py#L59) |
+| Titan Embeddings - V1 | `embedding(model="bedrock/amazon.titan-embed-text-v1", input=input)` | [here](https://github.com/skorpland/mishikallm/blob/f5905e100068e7a4d61441d7453d7cf5609c2121/mishikallm/llms/bedrock/embed/amazon_titan_g1_transformation.py#L53)
+| Titan Multimodal Embeddings | `embedding(model="bedrock/amazon.titan-embed-image-v1", input=input)` | [here](https://github.com/skorpland/mishikallm/blob/f5905e100068e7a4d61441d7453d7cf5609c2121/mishikallm/llms/bedrock/embed/amazon_titan_multimodal_transformation.py#L28) |
+| Cohere Embeddings - English | `embedding(model="bedrock/cohere.embed-english-v3", input=input)` | [here](https://github.com/skorpland/mishikallm/blob/f5905e100068e7a4d61441d7453d7cf5609c2121/mishikallm/llms/bedrock/embed/cohere_transformation.py#L18)
+| Cohere Embeddings - Multilingual | `embedding(model="bedrock/cohere.embed-multilingual-v3", input=input)` | [here](https://github.com/skorpland/mishikallm/blob/f5905e100068e7a4d61441d7453d7cf5609c2121/mishikallm/llms/bedrock/embed/cohere_transformation.py#L18)
 
 ### Advanced - [Drop Unsupported Params](https://docs.21t.cc/docs/completion/drop_params#openai-proxy-usage)
 
@@ -2020,7 +2020,7 @@ curl -L -X POST 'http://0.0.0.0:4000/v1/images/generations' \
   
 ### Passing an external BedrockRuntime.Client as a parameter - Completion()
   
-This is a deprecated flow. Boto3 is not async. And boto3.client does not let us make the http call through httpx. Pass in your aws params through the method above 👆. [See Auth Code](https://github.com/BerriAI/mishikallm/blob/55a20c7cce99a93d36a82bf3ae90ba3baf9a7f89/mishikallm/llms/bedrock_httpx.py#L284) [Add new auth flow](https://github.com/BerriAI/mishikallm/issues)
+This is a deprecated flow. Boto3 is not async. And boto3.client does not let us make the http call through httpx. Pass in your aws params through the method above 👆. [See Auth Code](https://github.com/skorpland/mishikallm/blob/55a20c7cce99a93d36a82bf3ae90ba3baf9a7f89/mishikallm/llms/bedrock_httpx.py#L284) [Add new auth flow](https://github.com/skorpland/mishikallm/issues)
 
 :::warning
 

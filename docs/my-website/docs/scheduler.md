@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 Beta feature. Use for testing only. 
 
-[Help us improve this](https://github.com/BerriAI/mishikallm/issues)
+[Help us improve this](https://github.com/skorpland/mishikallm/issues)
 :::
 
 Prioritize LLM API requests in high-traffic.

@@ -28,7 +28,7 @@ os.environ["AZURE_API_TYPE"] = ""
 ```
 
 ## **Usage - MishikaLLM Python SDK**
-<a target="_blank" href="https://colab.research.google.com/github/BerriAI/mishikallm/blob/main/cookbook/MishikaLLM_Azure_OpenAI.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/skorpland/mishikallm/blob/main/cookbook/MishikaLLM_Azure_OpenAI.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -295,7 +295,7 @@ response = completion(
 
 Azure OpenAI O-Series models are supported on MishikaLLM. 
 
-MishikaLLM routes any deployment name with `o1` or `o3` in the model name, to the O-Series [transformation](https://github.com/BerriAI/mishikallm/blob/91ed05df2962b8eee8492374b048d27cc144d08c/mishikallm/llms/azure/chat/o1_transformation.py#L4) logic.
+MishikaLLM routes any deployment name with `o1` or `o3` in the model name, to the O-Series [transformation](https://github.com/skorpland/mishikallm/blob/91ed05df2962b8eee8492374b048d27cc144d08c/mishikallm/llms/azure/chat/o1_transformation.py#L4) logic.
 
 To set this explicitly, set `model` to `azure/o_series/<your-deployment-name>`.
 
@@ -1011,7 +1011,7 @@ Expected Response:
 | Supported Operations | `/v1/responses`|
 | Azure OpenAI Responses API | [Azure OpenAI Responses API ↗](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/responses?tabs=python-secure) |
 | Cost Tracking, Logging Support | ✅ MishikaLLM will log, track cost for Responses API Requests |
-| Supported OpenAI Params | ✅ All OpenAI params are supported, [See here](https://github.com/BerriAI/mishikallm/blob/0717369ae6969882d149933da48eeb8ab0e691bd/mishikallm/llms/openai/responses/transformation.py#L23) |
+| Supported OpenAI Params | ✅ All OpenAI params are supported, [See here](https://github.com/skorpland/mishikallm/blob/0717369ae6969882d149933da48eeb8ab0e691bd/mishikallm/llms/openai/responses/transformation.py#L23) |
 
 ## Usage
 
@@ -1311,7 +1311,7 @@ model_list:
 
 **Solution** ✅ :  Set `base_model` on your config so mishikallm uses the correct model for calculating azure cost
 
-Get the base model name from [here](https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json)
+Get the base model name from [here](https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json)
 
 Example config with `base_model`
 ```yaml

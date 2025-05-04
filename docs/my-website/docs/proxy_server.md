@@ -665,7 +665,7 @@ print(result)
 </Tabs>
 
 :::note
-**Contribute** Using this server with a project? Contribute your tutorial [here!](https://github.com/BerriAI/mishikallm)
+**Contribute** Using this server with a project? Contribute your tutorial [here!](https://github.com/skorpland/mishikallm)
 
 ::: 
 

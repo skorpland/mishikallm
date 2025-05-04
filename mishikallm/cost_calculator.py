@@ -604,7 +604,7 @@ def completion_cost(  # noqa: PLR0915
         float: The cost in USD dollars for the completion based on the provided parameters.
 
     Exceptions:
-        Raises exception if model not in the mishikallm model cost map. Register model, via custom pricing or PR - https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json
+        Raises exception if model not in the mishikallm model cost map. Register model, via custom pricing or PR - https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json
 
 
     Note:

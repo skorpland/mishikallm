@@ -3,7 +3,7 @@ Anthropic, OpenAI, Mistral, Llama and Gemini LLMs are Supported on Clarifai.
 
 :::warning 
 
-Streaming is not yet supported on using clarifai and mishikallm. Tracking support here: https://github.com/BerriAI/mishikallm/issues/4162
+Streaming is not yet supported on using clarifai and mishikallm. Tracking support here: https://github.com/skorpland/mishikallm/issues/4162
 
 :::
 

@@ -2,15 +2,15 @@
 name = "mishikallm-proxy-extras"
 version = "0.1.15"
 description = "Additional files for the MishikaLLM Proxy. Reduces the size of the main mishikallm package."
-authors = ["BerriAI"]
+authors = ["skorpland"]
 readme = "README.md"
 
 
 [tool.poetry.urls]
 homepage = "https://21t.cc"
 Homepage = "https://21t.cc"
-repository = "https://github.com/BerriAI/mishikallm"
-Repository = "https://github.com/BerriAI/mishikallm"
+repository = "https://github.com/skorpland/mishikallm"
+Repository = "https://github.com/skorpland/mishikallm"
 documentation = "https://docs.21t.cc"
 Documentation = "https://docs.21t.cc"
 

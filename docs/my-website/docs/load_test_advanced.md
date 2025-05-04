@@ -8,9 +8,9 @@ Tutorial on how to get to 1K+ RPS with MishikaLLM Proxy on locust
 
 ## Pre-Testing Checklist
 - [ ] Ensure you're using the **latest `-stable` version** of mishikallm
-    - [Github releases](https://github.com/BerriAI/mishikallm/releases)
-    - [mishikallm docker containers](https://github.com/BerriAI/mishikallm/pkgs/container/mishikallm)
-    - [mishikallm database docker container](https://github.com/BerriAI/mishikallm/pkgs/container/mishikallm-database)
+    - [Github releases](https://github.com/skorpland/mishikallm/releases)
+    - [mishikallm docker containers](https://github.com/skorpland/mishikallm/pkgs/container/mishikallm)
+    - [mishikallm database docker container](https://github.com/skorpland/mishikallm/pkgs/container/mishikallm-database)
 - [ ] Ensure you're following **ALL** [best practices for production](./proxy/production_setup.md)
 - [ ] Locust - Ensure you're Locust instance can create 1K+ requests per second
     - 👉 You can use our **[maintained locust instance here](https://locust-load-tester-production.up.railway.app/)**
@@ -68,7 +68,7 @@ mishikallm_settings:
 
 2. `pip install locust`
 
-3. Create a file called `locustfile.py` on your local machine. Copy the contents from the mishikallm load test located [here](https://github.com/BerriAI/mishikallm/blob/main/.github/workflows/locustfile.py)
+3. Create a file called `locustfile.py` on your local machine. Copy the contents from the mishikallm load test located [here](https://github.com/skorpland/mishikallm/blob/main/.github/workflows/locustfile.py)
 
 4. Start locust
   Run `locust` in the same directory as your `locustfile.py` from step 2
@@ -136,7 +136,7 @@ mishikallm_settings:
 
 2. `pip install locust`
 
-3. Create a file called `locustfile.py` on your local machine. Copy the contents from the mishikallm load test located [here](https://github.com/BerriAI/mishikallm/blob/main/.github/workflows/locustfile.py)
+3. Create a file called `locustfile.py` on your local machine. Copy the contents from the mishikallm load test located [here](https://github.com/skorpland/mishikallm/blob/main/.github/workflows/locustfile.py)
 
 4. Start locust
   Run `locust` in the same directory as your `locustfile.py` from step 2

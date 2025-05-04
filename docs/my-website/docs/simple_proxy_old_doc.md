@@ -10,7 +10,7 @@ MishikaLLM Server manages:
 * **Load Balancing**: between [Multiple Models](#multiple-models---quick-start) + [Deployments of the same model](#multiple-instances-of-1-model) - MishikaLLM proxy can handle 1.5k+ requests/second during load tests.
 * **Cost tracking**: Authentication & Spend Tracking [Virtual Keys](#managing-auth---virtual-keys)
 
-[**See MishikaLLM Proxy code**](https://github.com/BerriAI/mishikallm/tree/main/mishikallm/proxy)
+[**See MishikaLLM Proxy code**](https://github.com/skorpland/mishikallm/tree/main/mishikallm/proxy)
 
 ## Quick Start 
 View all the supported args for the Proxy CLI [here](https://docs.21t.cc/docs/simple_proxy#proxy-cli-arguments)
@@ -549,7 +549,7 @@ If a call fails after num_retries, fall back to another model group.
 
 If the error is a context window exceeded error, fall back to a larger model group (if given).
 
-[**See Code**](https://github.com/BerriAI/mishikallm/blob/main/mishikallm/router.py)
+[**See Code**](https://github.com/skorpland/mishikallm/blob/main/mishikallm/router.py)
 
 **Set via config**
 ```yaml
@@ -638,7 +638,7 @@ Requirements:
 
 You can then generate temporary keys by hitting the `/key/generate` endpoint.
 
-[**See code**](https://github.com/BerriAI/mishikallm/blob/7a669a36d2689c7f7890bc9c93e04ff3c2641299/mishikallm/proxy/proxy_server.py#L672)
+[**See code**](https://github.com/skorpland/mishikallm/blob/7a669a36d2689c7f7890bc9c93e04ff3c2641299/mishikallm/proxy/proxy_server.py#L672)
 
 **Step 1: Save postgres db url**
 
@@ -730,7 +730,7 @@ curl -X POST "https://0.0.0.0:4000/key/generate" \
 ```
 
 - **How to upgrade / downgrade request?** Change the alias mapping
-- **How are routing between diff keys/api bases done?** mishikallm handles this by shuffling between different models in the model list with the same model_name. [**See Code**](https://github.com/BerriAI/mishikallm/blob/main/mishikallm/router.py)
+- **How are routing between diff keys/api bases done?** mishikallm handles this by shuffling between different models in the model list with the same model_name. [**See Code**](https://github.com/skorpland/mishikallm/blob/main/mishikallm/router.py)
 
 ### Managing Auth - Tracking Spend 
 
@@ -742,7 +742,7 @@ curl 'http://0.0.0.0:4000/key/info?key=<user-key>' \
      -H 'Authorization: Bearer <your-master-key>'
 ```
 
-This is automatically updated (in USD) when calls are made to /completions, /chat/completions, /embeddings using mishikallm's completion_cost() function. [**See Code**](https://github.com/BerriAI/mishikallm/blob/1a6ea20a0bb66491968907c2bfaabb7fe45fc064/mishikallm/utils.py#L1654). 
+This is automatically updated (in USD) when calls are made to /completions, /chat/completions, /embeddings using mishikallm's completion_cost() function. [**See Code**](https://github.com/skorpland/mishikallm/blob/1a6ea20a0bb66491968907c2bfaabb7fe45fc064/mishikallm/utils.py#L1654). 
 
 **Sample response**
 
@@ -813,7 +813,7 @@ model_list:
       api_key: os.environ/AZURE_NORTH_AMERICA_API_KEY
 ```
 
-[**See Code**](https://github.com/BerriAI/mishikallm/blob/c12d6c3fe80e1b5e704d9846b246c059defadce7/mishikallm/utils.py#L2366)
+[**See Code**](https://github.com/skorpland/mishikallm/blob/c12d6c3fe80e1b5e704d9846b246c059defadce7/mishikallm/utils.py#L2366)
 
 s/o to [@David Manouchehri](https://www.linkedin.com/in/davidmanouchehri/) for helping with this. 
 

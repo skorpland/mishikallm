@@ -6,7 +6,7 @@ Pass-through endpoints for Mistral - call provider-specific endpoint, in native 
 |-------|-------|-------|
 | Cost Tracking | ❌ | Not supported |
 | Logging | ✅ | works across all integrations |
-| End-user Tracking | ❌ | [Tell us if you need this](https://github.com/BerriAI/mishikallm/issues/new) |
+| End-user Tracking | ❌ | [Tell us if you need this](https://github.com/skorpland/mishikallm/issues/new) |
 | Streaming | ✅ | |
 
 Just replace `https://api.mistral.ai/v1` with `MISHIKALLM_PROXY_BASE_URL/mistral` 🚀

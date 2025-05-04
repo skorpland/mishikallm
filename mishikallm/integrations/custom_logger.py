@@ -151,7 +151,7 @@ class CustomLogger:  # https://docs.21t.cc/docs/observability/custom_callback#ca
     ):
         pass
 
-    #### ADAPTERS #### Allow calling 100+ LLMs in custom format - https://github.com/BerriAI/mishikallm/pulls
+    #### ADAPTERS #### Allow calling 100+ LLMs in custom format - https://github.com/skorpland/mishikallm/pulls
 
     def translate_completion_input_params(
         self, kwargs

@@ -253,7 +253,7 @@ Example setting a local image (on your container)
 UI_LOGO_PATH="ui_images/logo.jpg"
 ```
 #### Set Custom Color Theme
-- Navigate to [/enterprise/enterprise_ui](https://github.com/BerriAI/mishikallm/blob/main/enterprise/enterprise_ui/_enterprise_colors.json)
+- Navigate to [/enterprise/enterprise_ui](https://github.com/skorpland/mishikallm/blob/main/enterprise/enterprise_ui/_enterprise_colors.json)
 - Inside the `enterprise_ui` directory, rename `_enterprise_colors.json` to `enterprise_colors.json`
 - Set your companies custom color scheme in `enterprise_colors.json`
 Example contents of `enterprise_colors.json` 

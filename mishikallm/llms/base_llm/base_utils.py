@@ -86,7 +86,7 @@ def _convert_tool_response_to_message(
                 return _message
             else:
                 # a lot of the times the `values` key is not present in the tool response
-                # relevant issue: https://github.com/BerriAI/mishikallm/issues/6741
+                # relevant issue: https://github.com/skorpland/mishikallm/issues/6741
                 _message = Message(content=json.dumps(args))
                 return _message
     except json.JSONDecodeError:

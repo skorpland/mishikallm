@@ -142,7 +142,7 @@ def get_llm_provider(  # noqa: PLR0915
             model.split("/", 1)[0] in mishikallm.provider_list
             and model.split("/", 1)[0] not in mishikallm.model_list_set
             and len(model.split("/"))
-            > 1  # handle edge case where user passes in `mishikallm --model mistral` https://github.com/BerriAI/mishikallm/issues/1351
+            > 1  # handle edge case where user passes in `mishikallm --model mistral` https://github.com/skorpland/mishikallm/issues/1351
         ):
             return _get_openai_compatible_provider_info(
                 model=model,
@@ -340,7 +340,7 @@ def get_llm_provider(  # noqa: PLR0915
                 response=httpx.Response(
                     status_code=400,
                     content=error_str,
-                    request=httpx.Request(method="completion", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                    request=httpx.Request(method="completion", url="https://github.com/skorpland/mishikallm"),  # type: ignore
                 ),
                 llm_provider="",
             )
@@ -368,7 +368,7 @@ def get_llm_provider(  # noqa: PLR0915
                 response=httpx.Response(
                     status_code=400,
                     content=error_str,
-                    request=httpx.Request(method="completion", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                    request=httpx.Request(method="completion", url="https://github.com/skorpland/mishikallm"),  # type: ignore
                 ),
                 llm_provider="",
             )

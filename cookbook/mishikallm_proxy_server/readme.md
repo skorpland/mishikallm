@@ -5,11 +5,11 @@
 [![PyPI Version](https://img.shields.io/pypi/v/mishikallm.svg)](https://pypi.org/project/mishikallm/)
 [![PyPI Version](https://img.shields.io/badge/stable%20version-v0.1.345-blue?color=green&link=https://pypi.org/project/mishikallm/0.1.1/)](https://pypi.org/project/mishikallm/0.1.1/)
 ![Downloads](https://img.shields.io/pypi/dm/mishikallm)
-[![mishikallm](https://img.shields.io/badge/%20%F0%9F%9A%85%20mishikaLLM-OpenAI%7CAzure%7CAnthropic%7CPalm%7CCohere%7CReplicate%7CHugging%20Face-blue?color=green)](https://github.com/BerriAI/mishikallm)
+[![mishikallm](https://img.shields.io/badge/%20%F0%9F%9A%85%20mishikaLLM-OpenAI%7CAzure%7CAnthropic%7CPalm%7CCohere%7CReplicate%7CHugging%20Face-blue?color=green)](https://github.com/skorpland/mishikallm)
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/DYqQAW?referralCode=t3ukrU)
 
-![4BC6491E-86D0-4833-B061-9F54524B2579](https://github.com/BerriAI/mishikallm/assets/17561003/f5dd237b-db5e-42e1-b1ac-f05683b1d724)
+![4BC6491E-86D0-4833-B061-9F54524B2579](https://github.com/skorpland/mishikallm/assets/17561003/f5dd237b-db5e-42e1-b1ac-f05683b1d724)
 
 ## What does mishikaLLM proxy do
 
@@ -134,7 +134,7 @@ All responses from the server are returned in the following format (for all LLM 
 
 1. Clone mishikaLLM repository to your local machine:
    ```
-   git clone https://github.com/BerriAI/mishikaLLM-proxy
+   git clone https://github.com/skorpland/mishikaLLM-proxy
    ```
 2. Install the required dependencies using pip
    ```

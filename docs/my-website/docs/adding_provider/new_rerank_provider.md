@@ -4,7 +4,7 @@ MishikaLLM **follows the Cohere Rerank API format** for all rerank providers. He
 
 ## 1. Create a transformation.py file
 
-Create a config class named `<Provider><Endpoint>Config` that inherits from [`BaseRerankConfig`](https://github.com/BerriAI/mishikallm/blob/main/mishikallm/llms/base_llm/rerank/transformation.py):
+Create a config class named `<Provider><Endpoint>Config` that inherits from [`BaseRerankConfig`](https://github.com/skorpland/mishikallm/blob/main/mishikallm/llms/base_llm/rerank/transformation.py):
 
 ```python
 from mishikallm.types.rerank import OptionalRerankParams, RerankRequest, RerankResponse
@@ -62,7 +62,7 @@ elif _custom_llm_provider == "your_provider":
 
 ## 4. Add Tests
 
-Add a test file to [`tests/llm_translation`](https://github.com/BerriAI/mishikallm/tree/main/tests/llm_translation)
+Add a test file to [`tests/llm_translation`](https://github.com/skorpland/mishikallm/tree/main/tests/llm_translation)
 
 ```python
 def test_basic_rerank_cohere():
@@ -81,4 +81,4 @@ def test_basic_rerank_cohere():
 
 
 ## Reference PRs
-- [Add Infinity Rerank](https://github.com/BerriAI/mishikallm/pull/7321)
+- [Add Infinity Rerank](https://github.com/skorpland/mishikallm/pull/7321)

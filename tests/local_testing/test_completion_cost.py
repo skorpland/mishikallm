@@ -794,7 +794,7 @@ def test_vertex_ai_claude_completion_cost():
 
 def test_vertex_ai_embedding_completion_cost(caplog):
     """
-    Relevant issue - https://github.com/BerriAI/mishikallm/issues/4630
+    Relevant issue - https://github.com/skorpland/mishikallm/issues/4630
     """
     os.environ["MISHIKALLM_LOCAL_MODEL_COST_MAP"] = "True"
     mishikallm.model_cost = mishikallm.get_model_cost_map(url="")
@@ -834,7 +834,7 @@ def test_vertex_ai_embedding_completion_cost(caplog):
 
 # def test_vertex_ai_embedding_completion_cost_e2e():
 #     """
-#     Relevant issue - https://github.com/BerriAI/mishikallm/issues/4630
+#     Relevant issue - https://github.com/skorpland/mishikallm/issues/4630
 #     """
 #     from test_amazing_vertex_completion import load_vertex_ai_credentials
 
@@ -2369,7 +2369,7 @@ def test_together_ai_embedding_completion_cost():
 
 def test_completion_cost_params():
     """
-    Relevant Issue: https://github.com/BerriAI/mishikallm/issues/6133
+    Relevant Issue: https://github.com/skorpland/mishikallm/issues/6133
     """
     mishikallm.set_verbose = True
     resp1_prompt_cost, resp1_completion_cost = cost_per_token(
@@ -2400,7 +2400,7 @@ def test_completion_cost_params():
 
 def test_completion_cost_params_2():
     """
-    Relevant Issue: https://github.com/BerriAI/mishikallm/issues/6133
+    Relevant Issue: https://github.com/skorpland/mishikallm/issues/6133
     """
     mishikallm.set_verbose = True
 
@@ -2594,7 +2594,7 @@ async def test_test_completion_cost_gpt4o_audio_output_from_model(stream):
 )
 def test_completion_cost_model_response_cost(response_model, custom_llm_provider):
     """
-    Relevant issue: https://github.com/BerriAI/mishikallm/issues/6310
+    Relevant issue: https://github.com/skorpland/mishikallm/issues/6310
     """
     from mishikallm import ModelResponse
 

@@ -3,7 +3,7 @@
     </h1>
     <p align="center">
         <p align="center">
-        <a href="https://render.com/deploy?repo=https://github.com/BerriAI/mishikallm" target="_blank" rel="nofollow"><img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render"></a>
+        <a href="https://render.com/deploy?repo=https://github.com/skorpland/mishikallm" target="_blank" rel="nofollow"><img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render"></a>
         <a href="https://railway.app/template/HLP0Ub?referralCode=jch2ME">
           <img src="https://railway.app/button.svg" alt="Deploy on Railway">
         </a>
@@ -34,12 +34,12 @@ MishikaLLM manages:
 - Retry/fallback logic across multiple deployments (e.g. Azure/OpenAI) - [Router](https://docs.21t.cc/docs/routing)
 - Set Budgets & Rate limits per project, api key, model [MishikaLLM Proxy Server (LLM Gateway)](https://docs.21t.cc/docs/simple_proxy)
 
-[**Jump to MishikaLLM Proxy (LLM Gateway) Docs**](https://github.com/BerriAI/mishikallm?tab=readme-ov-file#openai-proxy---docs) <br>
-[**Jump to Supported LLM Providers**](https://github.com/BerriAI/mishikallm?tab=readme-ov-file#supported-providers-docs)
+[**Jump to MishikaLLM Proxy (LLM Gateway) Docs**](https://github.com/skorpland/mishikallm?tab=readme-ov-file#openai-proxy---docs) <br>
+[**Jump to Supported LLM Providers**](https://github.com/skorpland/mishikallm?tab=readme-ov-file#supported-providers-docs)
 
 🚨 **Stable Release:** Use docker images with the `-stable` tag. These have undergone 12 hour load tests, before being published. [More information about the release cycle here](https://docs.21t.cc/docs/proxy/release_cycle)
 
-Support for more providers. Missing a provider or LLM Platform, raise a [feature request](https://github.com/BerriAI/mishikallm/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.yml&title=%5BFeature%5D%3A+).
+Support for more providers. Missing a provider or LLM Platform, raise a [feature request](https://github.com/skorpland/mishikallm/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.yml&title=%5BFeature%5D%3A+).
 
 # Usage ([**Docs**](https://docs.21t.cc/docs/))
 
@@ -47,7 +47,7 @@ Support for more providers. Missing a provider or LLM Platform, raise a [feature
 > MishikaLLM v1.0.0 now requires `openai>=1.0.0`. Migration guide [here](https://docs.21t.cc/docs/migration)  
 > MishikaLLM v1.40.14+ now requires `pydantic>=2.0.0`. No changes required.
 
-<a target="_blank" href="https://colab.research.google.com/github/BerriAI/mishikallm/blob/main/cookbook/mishikaLLM_Getting_Started.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/skorpland/mishikallm/blob/main/cookbook/mishikaLLM_Getting_Started.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -249,7 +249,7 @@ Connect the proxy with a Postgres DB to create proxy keys
 
 ```bash
 # Get the code
-git clone https://github.com/BerriAI/mishikallm
+git clone https://github.com/skorpland/mishikallm
 
 # Go to folder
 cd mishikallm
@@ -271,7 +271,7 @@ docker-compose up
 
 
 UI on `/ui` on your proxy server
-![ui_3](https://github.com/BerriAI/mishikallm/assets/29436595/47c97d5e-b9be-4839-b28c-43d7f4f10033)
+![ui_3](https://github.com/skorpland/mishikallm/assets/29436595/47c97d5e-b9be-4839-b28c-43d7f4f10033)
 
 Set budgets and rate limits across multiple projects
 `POST /key/generate`
@@ -342,58 +342,15 @@ Interested in contributing? Contributions to MishikaLLM Python SDK, Proxy Server
 # Enterprise
 For companies that need better security, user management and professional support
 
-[Talk to founders](https://calendly.com/d/4mp-gd3-k5k/mishikallm-1-1-onboarding-chat)
-
 This covers: 
-- ✅ **Features under the [MishikaLLM Commercial License](https://docs.21t.cc/docs/proxy/enterprise):**
+- ✅ **Features under the [MishikaLLM Commercial License]
 - ✅ **Feature Prioritization**
 - ✅ **Custom Integrations**
 - ✅ **Professional Support - Dedicated discord + slack**
 - ✅ **Custom SLAs**
 - ✅ **Secure access with Single Sign-On**
 
-# Code Quality / Linting
 
-MishikaLLM follows the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html).
-
-We run: 
-- Ruff for [formatting and linting checks](https://github.com/BerriAI/mishikallm/blob/e19bb55e3b4c6a858b6e364302ebbf6633a51de5/.circleci/config.yml#L320)
-- Mypy + Pyright for typing [1](https://github.com/BerriAI/mishikallm/blob/e19bb55e3b4c6a858b6e364302ebbf6633a51de5/.circleci/config.yml#L90), [2](https://github.com/BerriAI/mishikallm/blob/e19bb55e3b4c6a858b6e364302ebbf6633a51de5/.pre-commit-config.yaml#L4)
-- Black for [formatting](https://github.com/BerriAI/mishikallm/blob/e19bb55e3b4c6a858b6e364302ebbf6633a51de5/.circleci/config.yml#L79)
-- isort for [import sorting](https://github.com/BerriAI/mishikallm/blob/e19bb55e3b4c6a858b6e364302ebbf6633a51de5/.pre-commit-config.yaml#L10)
-
-
-If you have suggestions on how to improve the code quality feel free to open an issue or a PR.
-
-
-# Support / talk with founders
-
-- [Schedule Demo 👋](https://calendly.com/d/4mp-gd3-k5k/berriai-1-1-onboarding-mishikallm-hosted-version)
-- [Community Discord 💭](https://discord.gg/wuPM9dRgDw)
-- Our numbers 📞 +1 (770) 8783-106 / ‭+1 (412) 618-6238‬
-- Our emails ✉️ ishaan@berri.ai / krrish@berri.ai
-
-# Why did we build this
-
-- **Need for simplicity**: Our code started to get extremely complicated managing & translating calls between Azure, OpenAI and Cohere.
-
-# Contributors
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-<a href="https://github.com/BerriAI/mishikallm/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=BerriAI/mishikallm" />
-</a>
-
-
-## Run in Developer mode
 ### Services
 1. Setup .env file in root
 2. Run dependant services `docker-compose up db prometheus`

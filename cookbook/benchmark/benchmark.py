@@ -17,7 +17,7 @@ os.environ["OPENAI_API_KEY"] = ""
 os.environ["ANTHROPIC_API_KEY"] = ""
 
 # List of questions to benchmark (replace with your questions)
-questions = ["When will BerriAI IPO?", "When will MishikaLLM hit $100M ARR?"]
+questions = ["When will skorpland IPO?", "When will MishikaLLM hit $100M ARR?"]
 
 # Enter your system prompt here
 system_prompt = """

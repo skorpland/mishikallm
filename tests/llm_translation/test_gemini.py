@@ -22,7 +22,7 @@ class TestGoogleAIStudioGemini(BaseLLMChatTest):
         return {"model": "gemini/gemini-2.5-flash-preview-04-17"}
 
     def test_tool_call_no_arguments(self, tool_call_no_arguments):
-        """Test that tool calls with no arguments is translated correctly. Relevant issue: https://github.com/BerriAI/mishikallm/issues/6833"""
+        """Test that tool calls with no arguments is translated correctly. Relevant issue: https://github.com/skorpland/mishikallm/issues/6833"""
         from mishikallm.mishikallm_core_utils.prompt_templates.factory import (
             convert_to_gemini_tool_call_invoke,
         )

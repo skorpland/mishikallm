@@ -68,7 +68,7 @@ model_list:
     mishikallm_params:
       model: "*"
 
-mishikallm_settings: # module level mishikallm settings - https://github.com/BerriAI/mishikallm/blob/main/mishikallm/__init__.py
+mishikallm_settings: # module level mishikallm settings - https://github.com/skorpland/mishikallm/blob/main/mishikallm/__init__.py
   drop_params: True
   success_callback: ["langfuse"] # OPTIONAL - if you want to start sending LLM Logs to Langfuse. Make sure to set `LANGFUSE_PUBLIC_KEY` and `LANGFUSE_SECRET_KEY` in your env
 
@@ -444,7 +444,7 @@ model_list:
       api_key: os.environ/AZURE_NORTH_AMERICA_API_KEY # 👈 KEY CHANGE
 ```
 
-[**See Code**](https://github.com/BerriAI/mishikallm/blob/c12d6c3fe80e1b5e704d9846b246c059defadce7/mishikallm/utils.py#L2366)
+[**See Code**](https://github.com/skorpland/mishikallm/blob/c12d6c3fe80e1b5e704d9846b246c059defadce7/mishikallm/utils.py#L2366)
 
 s/o to [@David Manouchehri](https://www.linkedin.com/in/davidmanouchehri/) for helping with this. 
 

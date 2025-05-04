@@ -3,7 +3,7 @@ import TabItem from '@theme/TabItem';
 
 # Provider-specific Params
 
-Providers might offer params not supported by OpenAI (e.g. top_k). MishikaLLM treats any non-openai param, as a provider-specific param, and passes it to the provider in the request body, as a kwarg. [**See Reserved Params**](https://github.com/BerriAI/mishikallm/blob/aa2fd29e48245f360e771a8810a69376464b195e/mishikallm/main.py#L700)
+Providers might offer params not supported by OpenAI (e.g. top_k). MishikaLLM treats any non-openai param, as a provider-specific param, and passes it to the provider in the request body, as a kwarg. [**See Reserved Params**](https://github.com/skorpland/mishikallm/blob/aa2fd29e48245f360e771a8810a69376464b195e/mishikallm/main.py#L700)
 
 You can pass those in 2 ways: 
 - via completion(): We'll pass the non-openai param, straight to the provider as part of the request body.

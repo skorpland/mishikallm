@@ -24,7 +24,7 @@ Disabling this will prevent your MishikaLLM DB from growing in size, which will 
 
 ## Need an Integration? Get in Touch
 
-- Request a logging integration on [Github Issues](https://github.com/BerriAI/mishikallm/issues)
+- Request a logging integration on [Github Issues](https://github.com/skorpland/mishikallm/issues)
 - Get in [touch with MishikaLLM Founders](https://calendly.com/d/4mp-gd3-k5k/mishikallm-1-1-onboarding-chat)
 - Get a 7-day free trial of MishikaLLM [here](https://21t.cc#trial)
 

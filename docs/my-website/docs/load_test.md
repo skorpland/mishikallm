@@ -18,7 +18,7 @@ model_list:
 
 2. `pip install locust`
 
-3. Create a file called `locustfile.py` on your local machine. Copy the contents from the mishikallm load test located [here](https://github.com/BerriAI/mishikallm/blob/main/.github/workflows/locustfile.py)
+3. Create a file called `locustfile.py` on your local machine. Copy the contents from the mishikallm load test located [here](https://github.com/skorpland/mishikallm/blob/main/.github/workflows/locustfile.py)
 
 4. Start locust
   Run `locust` in the same directory as your `locustfile.py` from step 2

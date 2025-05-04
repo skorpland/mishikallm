@@ -23,7 +23,7 @@ Here's how to modify the repo locally:
 Step 1: Clone the repo
 
 ```shell
-git clone https://github.com/BerriAI/mishikallm.git
+git clone https://github.com/skorpland/mishikallm.git
 ```
 
 Step 2: Install dev dependencies:
@@ -36,7 +36,7 @@ That's it, your local dev environment is ready!
 
 ## 2. Adding Testing to your PR
 
-- Add your test to the [`tests/mishikallm/` directory](https://github.com/BerriAI/mishikallm/tree/main/tests/mishikallm)
+- Add your test to the [`tests/mishikallm/` directory](https://github.com/skorpland/mishikallm/tree/main/tests/mishikallm)
 
 - This directory 1:1 maps the the `mishikallm/` directory, and can only contain mocked tests.
 - Do not add real llm api calls to this directory.
@@ -80,7 +80,7 @@ Some people might want to build the MishikaLLM docker image themselves. Follow t
 Step 1: Clone the repo
 
 ```shell
-git clone https://github.com/BerriAI/mishikallm.git
+git clone https://github.com/skorpland/mishikallm.git
 ```
 
 Step 2: Build the Docker Image

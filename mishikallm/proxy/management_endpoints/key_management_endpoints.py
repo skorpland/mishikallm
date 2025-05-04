@@ -85,7 +85,7 @@ def _is_allowed_to_make_key_request(
     """
     Assert user only creates keys for themselves
 
-    Relevant issue: https://github.com/BerriAI/mishikallm/issues/7336
+    Relevant issue: https://github.com/skorpland/mishikallm/issues/7336
     """
     ## BASE CASE - PROXY ADMIN
     if (
@@ -106,7 +106,7 @@ def _is_allowed_to_make_key_request(
             user_api_key_dict.team_id is not None
             and user_api_key_dict.team_id == UI_TEAM_ID
         ):
-            return True  # handle https://github.com/BerriAI/mishikallm/issues/7482
+            return True  # handle https://github.com/skorpland/mishikallm/issues/7482
 
     return True
 

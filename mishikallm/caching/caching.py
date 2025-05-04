@@ -1,7 +1,7 @@
 # +-----------------------------------------------+
 # |                                               |
 # |           Give Feedback / Get Help            |
-# | https://github.com/BerriAI/mishikallm/issues/new |
+# | https://github.com/skorpland/mishikallm/issues/new |
 # |                                               |
 # +-----------------------------------------------+
 #

@@ -205,7 +205,7 @@ print(delete_response)
 
 | Provider | Supported Parameters |
 |----------|---------------------|
-| `openai` | [All Responses API parameters are supported](https://github.com/BerriAI/mishikallm/blob/7c3df984da8e4dff9201e4c5353fdc7a2b441831/mishikallm/llms/openai/responses/transformation.py#L23) |
+| `openai` | [All Responses API parameters are supported](https://github.com/skorpland/mishikallm/blob/7c3df984da8e4dff9201e4c5353fdc7a2b441831/mishikallm/llms/openai/responses/transformation.py#L23) |
 
 ## Computer Use 
 

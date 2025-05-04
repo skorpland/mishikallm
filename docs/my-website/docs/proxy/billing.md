@@ -165,7 +165,7 @@ This is what MishikaLLM will log to Lagos
           "input_tokens": <number>,
           "output_tokens": <number>,
           "model": <string>,
-          "response_cost": <number>, # 👈 MISHIKALLM CALCULATED RESPONSE COST - https://github.com/BerriAI/mishikallm/blob/d43f75150a65f91f60dc2c0c9462ce3ffc713c1f/mishikallm/utils.py#L1473
+          "response_cost": <number>, # 👈 MISHIKALLM CALCULATED RESPONSE COST - https://github.com/skorpland/mishikallm/blob/d43f75150a65f91f60dc2c0c9462ce3ffc713c1f/mishikallm/utils.py#L1473
       }
     }
 }

@@ -653,7 +653,7 @@ async def test_rate_limit_error_callback():
     """
     Assert a callback is hit, if a model group starts hitting rate limit errors
 
-    Relevant issue: https://github.com/BerriAI/mishikallm/issues/4096
+    Relevant issue: https://github.com/skorpland/mishikallm/issues/4096
     """
     from mishikallm.mishikallm_core_utils.mishikallm_logging import Logging as MishikaLLMLogging
 

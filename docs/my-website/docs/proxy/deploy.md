@@ -4,7 +4,7 @@ import Image from '@theme/IdealImage';
 
 # Docker, Deployment
 
-You can find the Dockerfile to build mishikallm proxy [here](https://github.com/BerriAI/mishikallm/blob/main/Dockerfile)
+You can find the Dockerfile to build mishikallm proxy [here](https://github.com/skorpland/mishikallm/blob/main/Dockerfile)
 
 ## Quick Start
 
@@ -12,7 +12,7 @@ To start using Mishikallm, run the following commands in a shell:
 
 ```bash
 # Get the code
-git clone https://github.com/BerriAI/mishikallm
+git clone https://github.com/skorpland/mishikallm
 
 # Go to folder
 cd mishikallm
@@ -261,11 +261,11 @@ To avoid issues with predictability, difficulties in rollback, and inconsistent 
 
 :::info
 
-[BETA] Helm Chart is BETA. If you run into an issues/have feedback please let us know [https://github.com/BerriAI/mishikallm/issues](https://github.com/BerriAI/mishikallm/issues)
+[BETA] Helm Chart is BETA. If you run into an issues/have feedback please let us know [https://github.com/skorpland/mishikallm/issues](https://github.com/skorpland/mishikallm/issues)
 
 :::
 
-Use this when you want to use mishikallm helm chart as a dependency for other charts. The `mishikallm-helm` OCI is hosted here [https://github.com/BerriAI/mishikallm/pkgs/container/mishikallm-helm](https://github.com/BerriAI/mishikallm/pkgs/container/mishikallm-helm)
+Use this when you want to use mishikallm helm chart as a dependency for other charts. The `mishikallm-helm` OCI is hosted here [https://github.com/skorpland/mishikallm/pkgs/container/mishikallm-helm](https://github.com/skorpland/mishikallm/pkgs/container/mishikallm-helm)
 
 #### Step 1. Pull the mishikallm helm chart
 
@@ -328,7 +328,7 @@ Requirements:
 
 <TabItem value="docker-deploy" label="Dockerfile">
 
-We maintain a [separate Dockerfile](https://github.com/BerriAI/mishikallm/pkgs/container/mishikallm-database) for reducing build time when running MishikaLLM proxy with a connected Postgres Database 
+We maintain a [separate Dockerfile](https://github.com/skorpland/mishikallm/pkgs/container/mishikallm-database) for reducing build time when running MishikaLLM proxy with a connected Postgres Database 
 
 ```shell
 docker pull ghcr.io/berriai/mishikallm-database:main-latest
@@ -454,16 +454,16 @@ Your MishikaLLM Proxy Server is now running on `http://0.0.0.0:4000`.
 
 :::info
 
-[BETA] Helm Chart is BETA. If you run into an issues/have feedback please let us know [https://github.com/BerriAI/mishikallm/issues](https://github.com/BerriAI/mishikallm/issues)
+[BETA] Helm Chart is BETA. If you run into an issues/have feedback please let us know [https://github.com/skorpland/mishikallm/issues](https://github.com/skorpland/mishikallm/issues)
 
 :::
 
-Use this to deploy mishikallm using a helm chart. Link to [the MishikaLLM Helm Chart](https://github.com/BerriAI/mishikallm/tree/main/deploy/charts/mishikallm-helm)
+Use this to deploy mishikallm using a helm chart. Link to [the MishikaLLM Helm Chart](https://github.com/skorpland/mishikallm/tree/main/deploy/charts/mishikallm-helm)
 
 #### Step 1. Clone the repository
 
 ```bash
-git clone https://github.com/BerriAI/mishikallm.git
+git clone https://github.com/skorpland/mishikallm.git
 ```
 
 #### Step 2. Deploy with Helm
@@ -489,7 +489,7 @@ kubectl \
 Your MishikaLLM Proxy Server is now running on `http://127.0.0.1:4000`.
 
 
-If you need to set your mishikallm proxy config.yaml, you can find this in [values.yaml](https://github.com/BerriAI/mishikallm/blob/main/deploy/charts/mishikallm-helm/values.yaml)
+If you need to set your mishikallm proxy config.yaml, you can find this in [values.yaml](https://github.com/skorpland/mishikallm/blob/main/deploy/charts/mishikallm-helm/values.yaml)
 
 </TabItem>
 
@@ -497,11 +497,11 @@ If you need to set your mishikallm proxy config.yaml, you can find this in [valu
 
 :::info
 
-[BETA] Helm Chart is BETA. If you run into an issues/have feedback please let us know [https://github.com/BerriAI/mishikallm/issues](https://github.com/BerriAI/mishikallm/issues)
+[BETA] Helm Chart is BETA. If you run into an issues/have feedback please let us know [https://github.com/skorpland/mishikallm/issues](https://github.com/skorpland/mishikallm/issues)
 
 :::
 
-Use this when you want to use mishikallm helm chart as a dependency for other charts. The `mishikallm-helm` OCI is hosted here [https://github.com/BerriAI/mishikallm/pkgs/container/mishikallm-helm](https://github.com/BerriAI/mishikallm/pkgs/container/mishikallm-helm)
+Use this when you want to use mishikallm helm chart as a dependency for other charts. The `mishikallm-helm` OCI is hosted here [https://github.com/skorpland/mishikallm/pkgs/container/mishikallm-helm](https://github.com/skorpland/mishikallm/pkgs/container/mishikallm-helm)
 
 #### Step 1. Pull the mishikallm helm chart
 
@@ -613,7 +613,7 @@ Use this docker image to deploy mishikallm with pre-generated prisma binaries.
 docker pull ghcr.io/berriai/mishikallm-non_root:main-stable
 ```
 
-[Published Docker Image link](https://github.com/BerriAI/mishikallm/pkgs/container/mishikallm-non_root)
+[Published Docker Image link](https://github.com/skorpland/mishikallm/pkgs/container/mishikallm-non_root)
 
 ## Advanced Deployment Settings
 
@@ -851,9 +851,9 @@ kubectl create configmap mishikallm-config --from-file=proxy_config.yaml
 Step 3. Apply `kub.yaml` and `service.yaml`
 Clone the following `kub.yaml` and `service.yaml` files and apply locally
 
-- Use this `kub.yaml` file - [mishikallm kub.yaml](https://github.com/BerriAI/mishikallm/blob/main/deploy/kubernetes/kub.yaml)
+- Use this `kub.yaml` file - [mishikallm kub.yaml](https://github.com/skorpland/mishikallm/blob/main/deploy/kubernetes/kub.yaml)
 
-- Use this `service.yaml` file - [mishikallm service.yaml](https://github.com/BerriAI/mishikallm/blob/main/deploy/kubernetes/service.yaml)
+- Use this `service.yaml` file - [mishikallm service.yaml](https://github.com/skorpland/mishikallm/blob/main/deploy/kubernetes/service.yaml)
 
 Apply `kub.yaml`
 ```
@@ -894,7 +894,7 @@ This will provision:
 - MishikaLLMDB - RDS::DBInstance
 
 #### Using AWS Cloud Formation Stack
-**MishikaLLM Cloudformation stack is located [here - mishikallm.yaml](https://github.com/BerriAI/mishikallm/blob/main/enterprise/cloudformation_stack/mishikallm.yaml)**
+**MishikaLLM Cloudformation stack is located [here - mishikallm.yaml](https://github.com/skorpland/mishikallm/blob/main/enterprise/cloudformation_stack/mishikallm.yaml)**
 
 #### 1. Create the CloudFormation Stack:
 In the AWS Management Console, navigate to the CloudFormation service, and click on "Create Stack."
@@ -927,7 +927,7 @@ Once the container is running, you can access the application by going to `http:
 
 ### Google Cloud Run
 
-1. Fork this repo - [github.com/BerriAI/example_mishikallm_gcp_cloud_run](https://github.com/BerriAI/example_mishikallm_gcp_cloud_run)
+1. Fork this repo - [github.com/skorpland/example_mishikallm_gcp_cloud_run](https://github.com/skorpland/example_mishikallm_gcp_cloud_run)
 
 2. Edit the `mishikallm_config.yaml` file in the repo to include your model settings 
 
@@ -983,7 +983,7 @@ https://railway.app
 
 **Step 1**
 
-- (Recommended) Use the example file `docker-compose.yml` given in the project root. e.g. https://github.com/BerriAI/mishikallm/blob/main/docker-compose.yml
+- (Recommended) Use the example file `docker-compose.yml` given in the project root. e.g. https://github.com/skorpland/mishikallm/blob/main/docker-compose.yml
 
 Here's an example `docker-compose.yml` file
 ```yaml
@@ -1030,7 +1030,7 @@ export AWS_ROLE_NAME='arn:aws:iam::123456789012:role/MyRole'
 export AWS_SESSION_NAME='MySession'
 ```
 
-[**See all Auth options**](https://github.com/BerriAI/mishikallm/blob/089a4f279ad61b7b3e213d8039fb9b75204a7abc/mishikallm/proxy/auth/rds_iam_token.py#L165)
+[**See all Auth options**](https://github.com/skorpland/mishikallm/blob/089a4f279ad61b7b3e213d8039fb9b75204a7abc/mishikallm/proxy/auth/rds_iam_token.py#L165)
 
 2. Add RDS credentials to env
 

@@ -261,7 +261,7 @@ Expected Response
 | `admin_only_routes` | ✅ | ✅ | ✅ | ❌ | Routes that can only be accessed by [Proxy Admin](./self_serve#available-roles) |
 | `allowed_routes` | ✅ | ✅ | ✅ | ✅ | Routes are exposed on the proxy. If not set then all routes exposed.  |
 
-`MishikaLLMRoutes.public_routes` is an ENUM corresponding to the default public routes on MishikaLLM. [You can see this here](https://github.com/BerriAI/mishikallm/blob/main/mishikallm/proxy/_types.py)
+`MishikaLLMRoutes.public_routes` is an ENUM corresponding to the default public routes on MishikaLLM. [You can see this here](https://github.com/skorpland/mishikallm/blob/main/mishikallm/proxy/_types.py)
 
 ```yaml
 general_settings:
@@ -1115,7 +1115,7 @@ os.environ["AWS_REGION_NAME"] = ""
 
 #### Customize LlamaGuard prompt 
 
-To modify the unsafe categories llama guard evaluates against, just create your own version of [this category list](https://github.com/BerriAI/mishikallm/blob/main/mishikallm/proxy/llamaguard_prompt.txt)
+To modify the unsafe categories llama guard evaluates against, just create your own version of [this category list](https://github.com/skorpland/mishikallm/blob/main/mishikallm/proxy/llamaguard_prompt.txt)
 
 Point your proxy to it
 
@@ -1282,7 +1282,7 @@ curl --location 'http://0.0.0.0:4000/chat/completions' \
 
 :::info 
 
-[Suggest a way to improve this](https://github.com/BerriAI/mishikallm/issues/new/choose)
+[Suggest a way to improve this](https://github.com/skorpland/mishikallm/issues/new/choose)
 
 :::
 
@@ -1369,7 +1369,7 @@ $ mishikallm
 ```
 
 How it works? 
-- Key Decryption runs before server starts up. [**Code**](https://github.com/BerriAI/mishikallm/blob/8571cb45e80cc561dc34bc6aa89611eb96b9fe3e/mishikallm/proxy/proxy_cli.py#L445)
+- Key Decryption runs before server starts up. [**Code**](https://github.com/skorpland/mishikallm/blob/8571cb45e80cc561dc34bc6aa89611eb96b9fe3e/mishikallm/proxy/proxy_cli.py#L445)
 - It adds the decrypted value to the `os.environ` for the python process. 
 
 **Note:** Setting an environment variable within a Python script using os.environ will not make that variable accessible via SSH sessions or any other new processes that are started independently of the Python script. Environment variables set this way only affect the current process and its child processes.

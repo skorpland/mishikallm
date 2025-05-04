@@ -467,7 +467,7 @@ def test_dynamic_drop_params_e2e():
 )
 def test_drop_params_parallel_tool_calls(model, provider, should_drop):
     """
-    https://github.com/BerriAI/mishikallm/issues/4584
+    https://github.com/skorpland/mishikallm/issues/4584
     """
     response = mishikallm.utils.get_optional_params(
         model=model,
@@ -489,7 +489,7 @@ def test_drop_params_parallel_tool_calls(model, provider, should_drop):
 
 def test_dynamic_drop_params_parallel_tool_calls():
     """
-    https://github.com/BerriAI/mishikallm/issues/4584
+    https://github.com/skorpland/mishikallm/issues/4584
     """
     with patch(
         "mishikallm.llms.custom_httpx.http_handler.HTTPHandler.post", new=MagicMock()
@@ -595,7 +595,7 @@ def test_bedrock_optional_params_embeddings_provider_specific_params():
 
 def test_get_optional_params_num_retries():
     """
-    Relevant issue - https://github.com/BerriAI/mishikallm/issues/5124
+    Relevant issue - https://github.com/skorpland/mishikallm/issues/5124
     """
     with patch("mishikallm.main.get_optional_params", new=MagicMock()) as mock_client:
         _ = mishikallm.completion(
@@ -774,9 +774,9 @@ def _check_additional_properties(schema):
 )
 def test_drop_nested_params_add_prop_and_strict(provider, model):
     """
-    Relevant issue - https://github.com/BerriAI/mishikallm/issues/5288
+    Relevant issue - https://github.com/skorpland/mishikallm/issues/5288
 
-    Relevant issue - https://github.com/BerriAI/mishikallm/issues/6136
+    Relevant issue - https://github.com/skorpland/mishikallm/issues/6136
     """
     tools = [
         {
@@ -816,7 +816,7 @@ def test_drop_nested_params_add_prop_and_strict(provider, model):
 
 def test_hosted_vllm_tool_param():
     """
-    Relevant issue - https://github.com/BerriAI/mishikallm/issues/6228
+    Relevant issue - https://github.com/skorpland/mishikallm/issues/6228
     """
     optional_params = get_optional_params(
         model="my-vllm-model",

@@ -47,7 +47,7 @@ def _print_alerting_payload_warning(
     Print the payload to the console when
     slackAlertingInstance.alerting_args.log_to_console is True
 
-    Relevant issue: https://github.com/BerriAI/mishikallm/issues/7372
+    Relevant issue: https://github.com/skorpland/mishikallm/issues/7372
     """
     if slackAlertingInstance.alerting_args.log_to_console is True:
         verbose_proxy_logger.warning(payload)

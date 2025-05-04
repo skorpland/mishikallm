@@ -267,7 +267,7 @@ Use these metrics to monitor the health of the DB Transaction Queue. Eg. Monitor
 
 Link to Grafana Dashboards maintained by MishikaLLM
 
-https://github.com/BerriAI/mishikallm/tree/main/cookbook/mishikallm_proxy_server/grafana_dashboard
+https://github.com/skorpland/mishikallm/tree/main/cookbook/mishikallm_proxy_server/grafana_dashboard
 
 Here is a screenshot of the metrics you can monitor with the MishikaLLM Grafana Dashboard
 

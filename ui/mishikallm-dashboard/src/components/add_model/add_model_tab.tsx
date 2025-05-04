@@ -250,7 +250,7 @@ const AddModelTab: React.FC<AddModelTabProps> = ({
 
             <div className="flex justify-between items-center mb-4">
               <Tooltip title="Get help on our github">
-                <Typography.Link href="https://github.com/BerriAI/mishikallm/issues">
+                <Typography.Link href="https://github.com/skorpland/mishikallm/issues">
                   Need Help?
                 </Typography.Link>
               </Tooltip>

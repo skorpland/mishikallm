@@ -180,7 +180,7 @@ async def test_db_error_new_model_check():
     """
     - if error in db, don't delete existing models
 
-    Relevant issue: https://github.com/BerriAI/mishikallm/blob/ddfe687b13e9f31db2fb2322887804e3d01dd467/mishikallm/proxy/proxy_server.py#L2461
+    Relevant issue: https://github.com/skorpland/mishikallm/blob/ddfe687b13e9f31db2fb2322887804e3d01dd467/mishikallm/proxy/proxy_server.py#L2461
     """
     import base64
 

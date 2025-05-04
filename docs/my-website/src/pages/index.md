@@ -3,7 +3,7 @@ import TabItem from '@theme/TabItem';
 
 # MishikaLLM - Getting Started
 
-https://github.com/BerriAI/mishikallm
+https://github.com/skorpland/mishikallm
 
 ## **Call 100+ LLMs using the OpenAI Input/Output Format**
 
@@ -48,7 +48,7 @@ Typically used by developers building llm projects
 
 ### Basic usage 
 
-<a target="_blank" href="https://colab.research.google.com/github/BerriAI/mishikallm/blob/main/cookbook/mishikaLLM_Getting_Started.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/skorpland/mishikallm/blob/main/cookbook/mishikaLLM_Getting_Started.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -424,7 +424,7 @@ response = completion(
 
 Track spend across multiple projects/people
 
-![ui_3](https://github.com/BerriAI/mishikallm/assets/29436595/47c97d5e-b9be-4839-b28c-43d7f4f10033)
+![ui_3](https://github.com/skorpland/mishikallm/assets/29436595/47c97d5e-b9be-4839-b28c-43d7f4f10033)
 
 The proxy provides:
 

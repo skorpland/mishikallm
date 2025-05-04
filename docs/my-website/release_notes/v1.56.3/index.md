@@ -113,5 +113,5 @@ You can now assign keys to users via Proxy UI
 
 ## Fixes 
 
-- Fix `vertex_ai/` mistral model pricing: https://github.com/BerriAI/mishikallm/pull/7345
-- Missing model_group field in logs for aspeech call types https://github.com/BerriAI/mishikallm/pull/7392
+- Fix `vertex_ai/` mistral model pricing: https://github.com/skorpland/mishikallm/pull/7345
+- Missing model_group field in logs for aspeech call types https://github.com/skorpland/mishikallm/pull/7392

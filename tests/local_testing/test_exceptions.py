@@ -824,7 +824,7 @@ def test_exception_mapping(provider):
 
 def test_anthropic_tool_calling_exception():
     """
-    Related - https://github.com/BerriAI/mishikallm/issues/4348
+    Related - https://github.com/skorpland/mishikallm/issues/4348
     """
     tools = [
         {
@@ -1214,7 +1214,7 @@ async def test_bad_request_error_contains_httpx_response(model):
     """
     Test that the BadRequestError contains the httpx response
 
-    Relevant issue: https://github.com/BerriAI/mishikallm/issues/6732
+    Relevant issue: https://github.com/skorpland/mishikallm/issues/6732
     """
     try:
         await mishikallm.acompletion(

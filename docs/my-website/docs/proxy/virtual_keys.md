@@ -8,7 +8,7 @@ Track Spend, and control model access via virtual keys for the proxy
 
 - 🔑 [UI to Generate, Edit, Delete Keys (with SSO)](https://docs.21t.cc/docs/proxy/ui)
 - [Deploy MishikaLLM Proxy with Key Management](https://docs.21t.cc/docs/proxy/deploy#deploy-with-database)
-- [Dockerfile.database for MishikaLLM Proxy + Key Management](https://github.com/BerriAI/mishikallm/blob/main/docker/Dockerfile.database)
+- [Dockerfile.database for MishikaLLM Proxy + Key Management](https://github.com/skorpland/mishikallm/blob/main/docker/Dockerfile.database)
 
 
 :::
@@ -32,7 +32,7 @@ export DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<dbname>
 
 You can then generate keys by hitting the `/key/generate` endpoint.
 
-[**See code**](https://github.com/BerriAI/mishikallm/blob/7a669a36d2689c7f7890bc9c93e04ff3c2641299/mishikallm/proxy/proxy_server.py#L672)
+[**See code**](https://github.com/skorpland/mishikallm/blob/7a669a36d2689c7f7890bc9c93e04ff3c2641299/mishikallm/proxy/proxy_server.py#L672)
 
 ## **Quick Start - Generate a Key**
 **Step 1: Save postgres db url**
@@ -72,11 +72,11 @@ Get spend per:
 - key - via `/key/info` [Swagger](https://mishikallm-api.up.railway.app/#/key%20management/info_key_fn_key_info_get)
 - user - via `/user/info` [Swagger](https://mishikallm-api.up.railway.app/#/user%20management/user_info_user_info_get)
 - team - via `/team/info` [Swagger](https://mishikallm-api.up.railway.app/#/team%20management/team_info_team_info_get)  
-- ⏳ end-users - via `/end_user/info` - [Comment on this issue for end-user cost tracking](https://github.com/BerriAI/mishikallm/issues/2633)
+- ⏳ end-users - via `/end_user/info` - [Comment on this issue for end-user cost tracking](https://github.com/skorpland/mishikallm/issues/2633)
 
 **How is it calculated?**
 
-The cost per model is stored [here](https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json) and calculated by the [`completion_cost`](https://github.com/BerriAI/mishikallm/blob/db7974f9f216ee50b53c53120d1e3fc064173b60/mishikallm/utils.py#L3771) function.
+The cost per model is stored [here](https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json) and calculated by the [`completion_cost`](https://github.com/skorpland/mishikallm/blob/db7974f9f216ee50b53c53120d1e3fc064173b60/mishikallm/utils.py#L3771) function.
 
 **How is it tracking?**
 
@@ -93,7 +93,7 @@ curl 'http://0.0.0.0:4000/key/info?key=<user-key>' \
      -H 'Authorization: Bearer <your-master-key>'
 ```
 
-This is automatically updated (in USD) when calls are made to /completions, /chat/completions, /embeddings using mishikallm's completion_cost() function. [**See Code**](https://github.com/BerriAI/mishikallm/blob/1a6ea20a0bb66491968907c2bfaabb7fe45fc064/mishikallm/utils.py#L1654). 
+This is automatically updated (in USD) when calls are made to /completions, /chat/completions, /embeddings using mishikallm's completion_cost() function. [**See Code**](https://github.com/skorpland/mishikallm/blob/1a6ea20a0bb66491968907c2bfaabb7fe45fc064/mishikallm/utils.py#L1654). 
 
 **Sample response**
 
@@ -400,7 +400,7 @@ If you need to add custom logic before generating a Proxy API Key (Example Valid
 #### 1. Write a custom `custom_generate_key_fn`
 
 
-The input to the custom_generate_key_fn function is a single parameter: `data` [(Type: GenerateKeyRequest)](https://github.com/BerriAI/mishikallm/blob/main/mishikallm/proxy/_types.py#L125)
+The input to the custom_generate_key_fn function is a single parameter: `data` [(Type: GenerateKeyRequest)](https://github.com/skorpland/mishikallm/blob/main/mishikallm/proxy/_types.py#L125)
 
 The output of your `custom_generate_key_fn` should be a dictionary with the following structure
 ```python

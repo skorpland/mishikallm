@@ -54,7 +54,7 @@ curl -L -X POST 'http://0.0.0.0:4000/budget/new' \
 
 MishikaLLM was double logging mishikallm_request span. This is now fixed.
 
-[Relevant PR](https://github.com/BerriAI/mishikallm/pull/7435)
+[Relevant PR](https://github.com/skorpland/mishikallm/pull/7435)
 
 ## Logging for Finetuning Endpoints 
 

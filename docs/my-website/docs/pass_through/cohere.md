@@ -6,7 +6,7 @@ Pass-through endpoints for Cohere - call provider-specific endpoint, in native f
 |-------|-------|-------|
 | Cost Tracking | ✅ | Supported for `/v1/chat`, and `/v2/chat` |
 | Logging | ✅ | works across all integrations |
-| End-user Tracking | ❌ | [Tell us if you need this](https://github.com/BerriAI/mishikallm/issues/new) |
+| End-user Tracking | ❌ | [Tell us if you need this](https://github.com/skorpland/mishikallm/issues/new) |
 | Streaming | ✅ | |
 
 Just replace `https://api.cohere.com` with `MISHIKALLM_PROXY_BASE_URL/cohere` 🚀

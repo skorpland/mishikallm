@@ -18,7 +18,7 @@ from mishikallm.llms.vertex_ai.vertex_ai_partner_models.llama3.transformation im
 class TestVertexAILlama3Config:
     def test_transform_choices(self):
         """
-        Relevant Issue: https://github.com/BerriAI/mishikallm/issues/10441#issuecomment-2844975599
+        Relevant Issue: https://github.com/skorpland/mishikallm/issues/10441#issuecomment-2844975599
         """
         config = VertexAILlama3Config()
 

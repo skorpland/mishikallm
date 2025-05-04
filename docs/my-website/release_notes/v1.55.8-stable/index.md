@@ -19,7 +19,7 @@ import Image from '@theme/IdealImage';
 
 # v1.55.8-stable
 
-A new MishikaLLM Stable release [just went out](https://github.com/BerriAI/mishikallm/releases/tag/v1.55.8-stable). Here are 5 updates since v1.52.2-stable. 
+A new MishikaLLM Stable release [just went out](https://github.com/skorpland/mishikallm/releases/tag/v1.55.8-stable). Here are 5 updates since v1.52.2-stable. 
 
 `langfuse`, `fallbacks`, `new models`, `azure_storage`
 

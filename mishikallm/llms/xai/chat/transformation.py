@@ -80,7 +80,7 @@ class XAIChatConfig(OpenAIGPTConfig):
         headers: dict,
     ) -> dict:
         """
-        Handle https://github.com/BerriAI/mishikallm/issues/9720
+        Handle https://github.com/skorpland/mishikallm/issues/9720
 
         Filter out 'name' from messages
         """

@@ -82,7 +82,7 @@ asyncio.run(completion_call())
 
 ## Error Handling - Infinite Loops
 
-Sometimes a model might enter an infinite loop, and keep repeating the same chunks - [e.g. issue](https://github.com/BerriAI/mishikallm/issues/5158)
+Sometimes a model might enter an infinite loop, and keep repeating the same chunks - [e.g. issue](https://github.com/skorpland/mishikallm/issues/5158)
 
 Break out of it with: 
 

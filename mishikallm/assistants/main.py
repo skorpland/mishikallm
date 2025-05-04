@@ -184,7 +184,7 @@ def get_assistants(
             response=httpx.Response(
                 status_code=400,
                 content="Unsupported provider",
-                request=httpx.Request(method="create_thread", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                request=httpx.Request(method="create_thread", url="https://github.com/skorpland/mishikallm"),  # type: ignore
             ),
         )
 
@@ -198,7 +198,7 @@ def get_assistants(
             response=httpx.Response(
                 status_code=400,
                 content="Unsupported provider",
-                request=httpx.Request(method="create_thread", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                request=httpx.Request(method="create_thread", url="https://github.com/skorpland/mishikallm"),  # type: ignore
             ),
         )
 
@@ -394,7 +394,7 @@ def create_assistants(
             response=httpx.Response(
                 status_code=400,
                 content="Unsupported provider",
-                request=httpx.Request(method="create_thread", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                request=httpx.Request(method="create_thread", url="https://github.com/skorpland/mishikallm"),  # type: ignore
             ),
         )
     if response is None:
@@ -572,7 +572,7 @@ def delete_assistant(
                 status_code=400,
                 content="Unsupported provider",
                 request=httpx.Request(
-                    method="delete_assistant", url="https://github.com/BerriAI/mishikallm"
+                    method="delete_assistant", url="https://github.com/skorpland/mishikallm"
                 ),
             ),
         )
@@ -761,7 +761,7 @@ def create_thread(
             response=httpx.Response(
                 status_code=400,
                 content="Unsupported provider",
-                request=httpx.Request(method="create_thread", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                request=httpx.Request(method="create_thread", url="https://github.com/skorpland/mishikallm"),  # type: ignore
             ),
         )
     return response  # type: ignore
@@ -916,7 +916,7 @@ def get_thread(
             response=httpx.Response(
                 status_code=400,
                 content="Unsupported provider",
-                request=httpx.Request(method="create_thread", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                request=httpx.Request(method="create_thread", url="https://github.com/skorpland/mishikallm"),  # type: ignore
             ),
         )
     return response  # type: ignore
@@ -1103,7 +1103,7 @@ def add_message(
             response=httpx.Response(
                 status_code=400,
                 content="Unsupported provider",
-                request=httpx.Request(method="create_thread", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                request=httpx.Request(method="create_thread", url="https://github.com/skorpland/mishikallm"),  # type: ignore
             ),
         )
 
@@ -1263,7 +1263,7 @@ def get_messages(
             response=httpx.Response(
                 status_code=400,
                 content="Unsupported provider",
-                request=httpx.Request(method="create_thread", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                request=httpx.Request(method="create_thread", url="https://github.com/skorpland/mishikallm"),  # type: ignore
             ),
         )
 
@@ -1478,7 +1478,7 @@ def run_thread(
             response=httpx.Response(
                 status_code=400,
                 content="Unsupported provider",
-                request=httpx.Request(method="create_thread", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                request=httpx.Request(method="create_thread", url="https://github.com/skorpland/mishikallm"),  # type: ignore
             ),
         )
     return response  # type: ignore

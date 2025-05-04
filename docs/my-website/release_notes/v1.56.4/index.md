@@ -41,7 +41,7 @@ print(f"response: {response}")
 
 ### **Fireworks AI - Vision** support for all models
 MishikaLLM supports document inlining for Fireworks AI models. This is useful for models that are not vision models, but still need to parse documents/images/etc.
-MishikaLLM will add `#transform=inline` to the url of the image_url, if the model is not a vision model [See Code](https://github.com/BerriAI/mishikallm/blob/1ae9d45798bdaf8450f2dfdec703369f3d2212b7/mishikallm/llms/fireworks_ai/chat/transformation.py#L114)
+MishikaLLM will add `#transform=inline` to the url of the image_url, if the model is not a vision model [See Code](https://github.com/skorpland/mishikallm/blob/1ae9d45798bdaf8450f2dfdec703369f3d2212b7/mishikallm/llms/fireworks_ai/chat/transformation.py#L114)
 
 
 ## Proxy Admin UI
@@ -57,12 +57,12 @@ MishikaLLM will add `#transform=inline` to the url of the image_url, if the mode
 
 ## Dependency Upgrades
 
-- (Security fix) Upgrade to `fastapi==0.115.5` https://github.com/BerriAI/mishikallm/pull/7447
+- (Security fix) Upgrade to `fastapi==0.115.5` https://github.com/skorpland/mishikallm/pull/7447
 
 ## Bug Fixes
 
 - Add health check support for realtime models [Here](https://docs.21t.cc/docs/proxy/health#realtime-models)
-- Health check error with audio_transcription model https://github.com/BerriAI/mishikallm/issues/5999
+- Health check error with audio_transcription model https://github.com/skorpland/mishikallm/issues/5999
 
 
 

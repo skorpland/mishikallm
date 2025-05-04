@@ -221,7 +221,7 @@ You can pass in any additional redis.Redis arg, by storing the variable + value 
 REDIS_<redis-kwarg-name> = ""
 ``` 
 
-[**See how it's read from the environment**](https://github.com/BerriAI/mishikallm/blob/4d7ff1b33b9991dcf38d821266290631d9bcd2dd/mishikallm/_redis.py#L40)
+[**See how it's read from the environment**](https://github.com/skorpland/mishikallm/blob/4d7ff1b33b9991dcf38d821266290631d9bcd2dd/mishikallm/_redis.py#L40)
 #### Step 3: Run proxy with config
 ```shell
 $ mishikallm --config /path/to/config.yaml
@@ -884,7 +884,7 @@ mishikallm_settings:
   callbacks: ["batch_redis_requests"] # 👈 KEY CHANGE!
 ```
 
-[**SEE CODE**](https://github.com/BerriAI/mishikallm/blob/main/mishikallm/proxy/hooks/batch_redis_get.py)
+[**SEE CODE**](https://github.com/skorpland/mishikallm/blob/main/mishikallm/proxy/hooks/batch_redis_get.py)
 
 ## Supported `cache_params` on proxy config.yaml
 

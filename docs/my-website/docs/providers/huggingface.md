@@ -63,7 +63,7 @@ completion(model="huggingface/meta-llama/Llama-3.3-70B-Instruct",...)
 ```
 
 
-<a target="_blank" href="https://colab.research.google.com/github/BerriAI/mishikallm/blob/main/cookbook/MishikaLLM_HuggingFace.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/skorpland/mishikallm/blob/main/cookbook/MishikaLLM_HuggingFace.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -194,7 +194,7 @@ print(response)
 
 <TabItem value="endpoints" label="Inference Endpoints">
 
-<a target="_blank" href="https://colab.research.google.com/github/BerriAI/mishikallm/blob/main/cookbook/MishikaLLM_HuggingFace.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/skorpland/mishikallm/blob/main/cookbook/MishikaLLM_HuggingFace.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -390,4 +390,4 @@ response = embedding(
 
 > Yes! New inference providers (and models) are being added gradually.
 
-We welcome any suggestions for improving our Hugging Face integration - Create an [issue](https://github.com/BerriAI/mishikallm/issues/new/choose)/[Join the Discord](https://discord.com/invite/wuPM9dRgDw)!
+We welcome any suggestions for improving our Hugging Face integration - Create an [issue](https://github.com/skorpland/mishikallm/issues/new/choose)/[Join the Discord](https://discord.com/invite/wuPM9dRgDw)!

@@ -28,7 +28,7 @@ completion(model=model, messages=messages, custom_llm_provider="huggingface")
 
 What's happening? 
 - model: This is the name of the deployed model on huggingface 
-- messages: This is the input. We accept the OpenAI chat format. For huggingface, by default we iterate through the list and add the message["content"] to the prompt. [Relevant Code](https://github.com/BerriAI/mishikallm/blob/6aff47083be659b80e00cb81eb783cb24db2e183/mishikallm/llms/huggingface_restapi.py#L46)
+- messages: This is the input. We accept the OpenAI chat format. For huggingface, by default we iterate through the list and add the message["content"] to the prompt. [Relevant Code](https://github.com/skorpland/mishikallm/blob/6aff47083be659b80e00cb81eb783cb24db2e183/mishikallm/llms/huggingface_restapi.py#L46)
 - custom_llm_provider: Optional param. This is an optional flag, needed only for Azure, Replicate, Huggingface and Together-ai (platforms where you deploy your own models). This enables mishikallm to route to the right provider, for your model. 
 
 ### Case 2: Call Llama2 public Huggingface endpoint
@@ -48,7 +48,7 @@ completion(model=model, messages=messages, custom_llm_provider="huggingface", ap
 ```
 
 What's happening? 
-- api_base: Optional param. Since this uses a deployed endpoint (not the [default huggingface inference endpoint](https://github.com/BerriAI/mishikallm/blob/6aff47083be659b80e00cb81eb783cb24db2e183/mishikallm/llms/huggingface_restapi.py#L35)), we pass that to MishikaLLM. 
+- api_base: Optional param. Since this uses a deployed endpoint (not the [default huggingface inference endpoint](https://github.com/skorpland/mishikallm/blob/6aff47083be659b80e00cb81eb783cb24db2e183/mishikallm/llms/huggingface_restapi.py#L35)), we pass that to MishikaLLM. 
 
 ### Case 3: Call Llama2 private Huggingface endpoint
 

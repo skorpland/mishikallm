@@ -154,8 +154,8 @@ Trust Relationship:
                 },
                 "ForAnyValue:StringLike": {
                     "oidc.circleci.com/org/c5a99188-154f-4f69-8da2-b442b1bf78dd:sub": [
-                        "org/c5a99188-154f-4f69-8da2-b442b1bf78dd/project/*/user/*/vcs-origin/github.com/BerriAI/mishikallm/vcs-ref/refs/heads/main",
-                        "org/c5a99188-154f-4f69-8da2-b442b1bf78dd/project/*/user/*/vcs-origin/github.com/BerriAI/mishikallm/vcs-ref/refs/heads/mishikallm_*"
+                        "org/c5a99188-154f-4f69-8da2-b442b1bf78dd/project/*/user/*/vcs-origin/github.com/skorpland/mishikallm/vcs-ref/refs/heads/main",
+                        "org/c5a99188-154f-4f69-8da2-b442b1bf78dd/project/*/user/*/vcs-origin/github.com/skorpland/mishikallm/vcs-ref/refs/heads/mishikallm_*"
                     ]
                 }
             }

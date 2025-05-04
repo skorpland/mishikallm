@@ -1,7 +1,7 @@
 # +-----------------------------------------------+
 # |                                               |
 # |           Give Feedback / Get Help            |
-# | https://github.com/BerriAI/mishikallm/issues/new |
+# | https://github.com/skorpland/mishikallm/issues/new |
 # |                                               |
 # +-----------------------------------------------+
 #
@@ -326,7 +326,7 @@ class Router:
         self.debug_level = debug_level
         self.enable_pre_call_checks = enable_pre_call_checks
         self.enable_tag_filtering = enable_tag_filtering
-        mishikallm.suppress_debug_info = True  # prevents 'Give Feedback/Get help' message from being emitted on Router - Relevant Issue: https://github.com/BerriAI/mishikallm/issues/5942
+        mishikallm.suppress_debug_info = True  # prevents 'Give Feedback/Get help' message from being emitted on Router - Relevant Issue: https://github.com/skorpland/mishikallm/issues/5942
         if self.set_verbose is True:
             if debug_level == "INFO":
                 verbose_router_logger.setLevel(logging.INFO)
@@ -4473,7 +4473,7 @@ class Router:
 
             if _mishikallm_params.get("organization", None) is not None and isinstance(
                 _mishikallm_params["organization"], list
-            ):  # Addresses https://github.com/BerriAI/mishikallm/issues/3949
+            ):  # Addresses https://github.com/skorpland/mishikallm/issues/3949
                 for org in _mishikallm_params["organization"]:
                     _mishikallm_params["organization"] = org
                     self._create_deployment(

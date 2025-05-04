@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 <br />
 <br />
 
-<a target="_blank" href="https://colab.research.google.com/github/BerriAI/mishikallm/blob/main/cookbook/mishikaLLM_VertextAI_Example.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/skorpland/mishikallm/blob/main/cookbook/mishikaLLM_VertextAI_Example.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -544,7 +544,7 @@ print(resp)
 
 ### **Thinking / `reasoning_content`**
 
-MishikaLLM translates OpenAI's `reasoning_effort` to Gemini's `thinking` parameter. [Code](https://github.com/BerriAI/mishikallm/blob/620664921902d7a9bfb29897a7b27c1a7ef4ddfb/mishikallm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py#L362)
+MishikaLLM translates OpenAI's `reasoning_effort` to Gemini's `thinking` parameter. [Code](https://github.com/skorpland/mishikallm/blob/620664921902d7a9bfb29897a7b27c1a7ef4ddfb/mishikallm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py#L362)
 
 **Mapping**
 
@@ -1370,7 +1370,7 @@ curl --location 'http://0.0.0.0:4000/chat/completions' \
 
 ## Mistral API
 
-[**Supported OpenAI Params**](https://github.com/BerriAI/mishikallm/blob/e0f3cd580cb85066f7d36241a03c30aa50a8a31d/mishikallm/llms/openai.py#L137)
+[**Supported OpenAI Params**](https://github.com/skorpland/mishikallm/blob/e0f3cd580cb85066f7d36241a03c30aa50a8a31d/mishikallm/llms/openai.py#L137)
  
 | Model Name       | Function Call                        |
 |------------------|--------------------------------------|
@@ -2238,7 +2238,7 @@ print(response)
 </Tabs>
 
 #### Supported Embedding Models
-All models listed [here](https://github.com/BerriAI/mishikallm/blob/57f37f743886a0249f630a6792d49dffc2c5d9b7/model_prices_and_context_window.json#L835) are supported
+All models listed [here](https://github.com/skorpland/mishikallm/blob/57f37f743886a0249f630a6792d49dffc2c5d9b7/model_prices_and_context_window.json#L835) are supported
 
 | Model Name               | Function Call                                                                                                                                                      |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -259,7 +259,7 @@ def create_file(
                 response=httpx.Response(
                     status_code=400,
                     content="Unsupported provider",
-                    request=httpx.Request(method="create_file", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                    request=httpx.Request(method="create_file", url="https://github.com/skorpland/mishikallm"),  # type: ignore
                 ),
             )
         return response
@@ -412,7 +412,7 @@ def file_retrieve(
                 response=httpx.Response(
                     status_code=400,
                     content="Unsupported provider",
-                    request=httpx.Request(method="create_thread", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                    request=httpx.Request(method="create_thread", url="https://github.com/skorpland/mishikallm"),  # type: ignore
                 ),
             )
         return cast(FileObject, response)
@@ -567,7 +567,7 @@ def file_delete(
                 response=httpx.Response(
                     status_code=400,
                     content="Unsupported provider",
-                    request=httpx.Request(method="create_thread", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                    request=httpx.Request(method="create_thread", url="https://github.com/skorpland/mishikallm"),  # type: ignore
                 ),
             )
         return cast(FileDeleted, response)
@@ -720,7 +720,7 @@ def file_list(
                 response=httpx.Response(
                     status_code=400,
                     content="Unsupported provider",
-                    request=httpx.Request(method="file_list", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                    request=httpx.Request(method="file_list", url="https://github.com/skorpland/mishikallm"),  # type: ignore
                 ),
             )
         return response
@@ -883,7 +883,7 @@ def file_content(
                 response=httpx.Response(
                     status_code=400,
                     content="Unsupported provider",
-                    request=httpx.Request(method="create_thread", url="https://github.com/BerriAI/mishikallm"),  # type: ignore
+                    request=httpx.Request(method="create_thread", url="https://github.com/skorpland/mishikallm"),  # type: ignore
                 ),
             )
         return response

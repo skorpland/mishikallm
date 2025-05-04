@@ -17,7 +17,7 @@ except (ImportError, AttributeError):
 
 os.environ["TIKTOKEN_CACHE_DIR"] = os.getenv(
     "CUSTOM_TIKTOKEN_CACHE_DIR", filename
-)  # use local copy of tiktoken b/c of - https://github.com/BerriAI/mishikallm/issues/1071
+)  # use local copy of tiktoken b/c of - https://github.com/skorpland/mishikallm/issues/1071
 import tiktoken
 
 encoding = tiktoken.get_encoding("cl100k_base")

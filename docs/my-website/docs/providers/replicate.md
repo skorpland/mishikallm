@@ -129,7 +129,7 @@ https://api.replicate.com/v1/models/meta/meta-llama-3-8b-instruct \
 
 ## Advanced Usage - Prompt Formatting 
 
-MishikaLLM has prompt template mappings for all `meta-llama` llama3 instruct models. [**See Code**](https://github.com/BerriAI/mishikallm/blob/4f46b4c3975cd0f72b8c5acb2cb429d23580c18a/mishikallm/llms/prompt_templates/factory.py#L1360)
+MishikaLLM has prompt template mappings for all `meta-llama` llama3 instruct models. [**See Code**](https://github.com/skorpland/mishikallm/blob/4f46b4c3975cd0f72b8c5acb2cb429d23580c18a/mishikallm/llms/prompt_templates/factory.py#L1360)
 
 To apply a custom prompt template: 
 

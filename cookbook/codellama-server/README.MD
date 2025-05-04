@@ -113,7 +113,7 @@ All responses from the server are returned in the following format (for all LLM 
 
 1. Clone mishikaLLM repository to your local machine:
    ```
-   git clone https://github.com/BerriAI/mishikallm-CodeLlama-server
+   git clone https://github.com/skorpland/mishikallm-CodeLlama-server
    ```
 2. Install the required dependencies using pip
    ```

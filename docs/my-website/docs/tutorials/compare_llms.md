@@ -11,12 +11,12 @@ Easily benchmark LLMs for a given question by viewing
 
 ## Setup:
 ```
-git clone https://github.com/BerriAI/mishikallm
+git clone https://github.com/skorpland/mishikallm
 ```
 cd to `mishikallm/cookbook/benchmark` dir
 
 Located here: 
-https://github.com/BerriAI/mishikallm/tree/main/cookbook/benchmark
+https://github.com/skorpland/mishikallm/tree/main/cookbook/benchmark
 ```
 cd mishikallm/cookbook/benchmark
 ```
@@ -41,7 +41,7 @@ os.environ['ANTHROPIC_API_KEY'] = ""
 
 # List of questions to benchmark (replace with your questions)
 questions = [
-    "When will BerriAI IPO?",
+    "When will skorpland IPO?",
     "When will MishikaLLM hit $100M ARR?"
 ]
 
@@ -54,28 +54,28 @@ python3 benchmark.py
 
 ## Expected Output
 ```
-Running question: When will BerriAI IPO? for model: claude-2: 100%|████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:13<00:00,  4.41s/it]
+Running question: When will skorpland IPO? for model: claude-2: 100%|████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:13<00:00,  4.41s/it]
 
-Benchmark Results for 'When will BerriAI IPO?':
+Benchmark Results for 'When will skorpland IPO?':
 +-----------------+----------------------------------------------------------------------------------+---------------------------+------------+
 | Model           | Response                                                                         | Response Time (seconds)   | Cost ($)   |
 +=================+==================================================================================+===========================+============+
 | gpt-3.5-turbo   | As an AI language model, I cannot provide up-to-date information or predict      | 1.55 seconds              | $0.000122  |
 |                 | future events. It is best to consult a reliable financial source or contact      |                           |            |
-|                 | BerriAI directly for information regarding their IPO plans.                      |                           |            |
+|                 | skorpland directly for information regarding their IPO plans.                      |                           |            |
 +-----------------+----------------------------------------------------------------------------------+---------------------------+------------+
-| togethercompute | I'm not able to provide information about future IPO plans or dates for BerriAI  | 8.52 seconds              | $0.000531  |
+| togethercompute | I'm not able to provide information about future IPO plans or dates for skorpland  | 8.52 seconds              | $0.000531  |
 | r/llama-2-70b-c | or any other company. IPO (Initial Public Offering) plans and timelines are      |                           |            |
 | hat             | typically kept private by companies until they are ready to make a public        |                           |            |
 |                 | announcement.  It's important to note that IPO plans can change and are subject  |                           |            |
 |                 | to various factors, such as market conditions, financial performance, and        |                           |            |
 |                 | regulatory approvals. Therefore, it's difficult to predict with certainty when   |                           |            |
-|                 | BerriAI or any other company will go public.  If you're interested in staying    |                           |            |
-|                 | up-to-date with BerriAI's latest news and developments, you may want to follow   |                           |            |
+|                 | skorpland or any other company will go public.  If you're interested in staying    |                           |            |
+|                 | up-to-date with skorpland's latest news and developments, you may want to follow   |                           |            |
 |                 | their official social media accounts, subscribe to their newsletter, or visit    |                           |            |
 |                 | their website periodically for updates.                                          |                           |            |
 +-----------------+----------------------------------------------------------------------------------+---------------------------+------------+
-| claude-2        | I do not have any information about when or if BerriAI will have an initial      | 3.17 seconds              | $0.002084  |
+| claude-2        | I do not have any information about when or if skorpland will have an initial      | 3.17 seconds              | $0.002084  |
 |                 | public offering (IPO). As an AI assistant created by Anthropic to be helpful,    |                           |            |
 |                 | harmless, and honest, I do not have insider knowledge about Anthropic's business |                           |            |
 |                 | plans or strategies.                                                             |                           |            |

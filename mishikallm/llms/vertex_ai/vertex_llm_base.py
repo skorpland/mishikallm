@@ -163,7 +163,7 @@ class VertexBase:
         url: str,
     ) -> Tuple[Optional[str], str]:
         """
-        for cloudflare ai gateway - https://github.com/BerriAI/mishikallm/issues/4317
+        for cloudflare ai gateway - https://github.com/skorpland/mishikallm/issues/4317
 
         ## Returns
         - (auth_header, url) - Tuple[Optional[str], str]

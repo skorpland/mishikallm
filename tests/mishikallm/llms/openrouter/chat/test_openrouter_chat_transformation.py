@@ -90,7 +90,7 @@ def test_openrouter_extra_body_transformation():
         headers={},
     )
 
-    # https://github.com/BerriAI/mishikallm/issues/8425, validate its not contained in extra_body still
+    # https://github.com/skorpland/mishikallm/issues/8425, validate its not contained in extra_body still
     assert transformed_request["provider"]["order"] == ["DeepSeek"]
     assert transformed_request["messages"] == [
         {"role": "user", "content": "Hello, world!"}

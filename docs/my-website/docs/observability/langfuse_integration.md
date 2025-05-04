@@ -27,7 +27,7 @@ pip install langfuse>=2.0.0 mishikallm
 ### Quick Start
 Use just 2 lines of code, to instantly log your responses **across all providers** with Langfuse:
 
-<a target="_blank" href="https://colab.research.google.com/github/BerriAI/mishikallm/blob/main/cookbook/logging_observability/MishikaLLM_Langfuse.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/skorpland/mishikallm/blob/main/cookbook/logging_observability/MishikaLLM_Langfuse.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 

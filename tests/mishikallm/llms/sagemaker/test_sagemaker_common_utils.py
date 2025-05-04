@@ -18,7 +18,7 @@ async def test_aiter_bytes_unicode_decode_error():
 
     Ensures stream processing continues despite the error.
 
-    Relevant issue: https://github.com/BerriAI/mishikallm/issues/9165
+    Relevant issue: https://github.com/skorpland/mishikallm/issues/9165
     """
     # Create an instance of AWSEventStreamDecoder
     decoder = AWSEventStreamDecoder(model="test-model")
@@ -59,7 +59,7 @@ async def test_aiter_bytes_valid_chunk_followed_by_unicode_error():
     Test that valid chunks are processed correctly even when followed by Unicode decode errors.
     This ensures errors don't corrupt or prevent processing of valid data that came before.
 
-    Relevant issue: https://github.com/BerriAI/mishikallm/issues/9165
+    Relevant issue: https://github.com/skorpland/mishikallm/issues/9165
     """
     decoder = AWSEventStreamDecoder(model="test-model")
 

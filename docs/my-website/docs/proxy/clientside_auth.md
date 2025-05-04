@@ -8,7 +8,7 @@ Allow your end-users to pass their model list, api base, OpenAI API key (any Mis
 
 :::info
 
-**You can pass a mishikallm.RouterConfig as `user_config`, See all supported params here https://github.com/BerriAI/mishikallm/blob/main/mishikallm/types/router.py **
+**You can pass a mishikallm.RouterConfig as `user_config`, See all supported params here https://github.com/skorpland/mishikallm/blob/main/mishikallm/types/router.py **
 
 :::
 

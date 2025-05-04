@@ -939,7 +939,7 @@ async def test_allow_access_by_email(
     """
     Allow anyone with an `@xyz.com` email make a request to the proxy.
 
-    Relevant issue: https://github.com/BerriAI/mishikallm/issues/5605
+    Relevant issue: https://github.com/skorpland/mishikallm/issues/5605
     """
     import jwt
     from starlette.datastructures import URL

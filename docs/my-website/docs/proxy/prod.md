@@ -65,7 +65,7 @@ If you decide to use Redis, DO NOT use 'redis_url'. We recommend using redis por
 
 `redis_url`is 80 RPS slower
 
-This is still something we're investigating. Keep track of it [here](https://github.com/BerriAI/mishikallm/issues/3188)
+This is still something we're investigating. Keep track of it [here](https://github.com/skorpland/mishikallm/issues/3188)
 
 Recommended to do this for prod: 
 
@@ -137,7 +137,7 @@ general_settings:
 
 ## 7. Use Helm PreSync Hook for Database Migrations [BETA]
 
-To ensure only one service manages database migrations, use our [Helm PreSync hook for Database Migrations](https://github.com/BerriAI/mishikallm/blob/main/deploy/charts/mishikallm-helm/templates/migrations-job.yaml). This ensures migrations are handled during `helm upgrade` or `helm install`, while MishikaLLM pods explicitly disable migrations.
+To ensure only one service manages database migrations, use our [Helm PreSync hook for Database Migrations](https://github.com/skorpland/mishikallm/blob/main/deploy/charts/mishikallm-helm/templates/migrations-job.yaml). This ensures migrations are handled during `helm upgrade` or `helm install`, while MishikaLLM pods explicitly disable migrations.
 
 
 1. **Helm PreSync Hook**:
@@ -175,7 +175,7 @@ We recommend - https://1password.com/password-generator/ password generator to g
 export MISHIKALLM_SALT_KEY="sk-1234"
 ```
 
-[**See Code**](https://github.com/BerriAI/mishikallm/blob/036a6821d588bd36d170713dcf5a72791a694178/mishikallm/proxy/common_utils/encrypt_decrypt_utils.py#L15)
+[**See Code**](https://github.com/skorpland/mishikallm/blob/036a6821d588bd36d170713dcf5a72791a694178/mishikallm/proxy/common_utils/encrypt_decrypt_utils.py#L15)
 
 
 ## 9. Use `prisma migrate deploy`
@@ -212,11 +212,11 @@ The migrate deploy command:
 
 ### How does MishikaLLM handle DB migrations in production?
 
-1. A new migration file is written to our `mishikallm-proxy-extras` package. [See all](https://github.com/BerriAI/mishikallm/tree/main/mishikallm-proxy-extras/mishikallm_proxy_extras/migrations)
+1. A new migration file is written to our `mishikallm-proxy-extras` package. [See all](https://github.com/skorpland/mishikallm/tree/main/mishikallm-proxy-extras/mishikallm_proxy_extras/migrations)
 
-2. The core mishikallm pip package is bumped to point to the new `mishikallm-proxy-extras` package. This ensures, older versions of MishikaLLM will continue to use the old migrations. [See code](https://github.com/BerriAI/mishikallm/blob/52b35cd8093b9ad833987b24f494586a1e923209/pyproject.toml#L58)
+2. The core mishikallm pip package is bumped to point to the new `mishikallm-proxy-extras` package. This ensures, older versions of MishikaLLM will continue to use the old migrations. [See code](https://github.com/skorpland/mishikallm/blob/52b35cd8093b9ad833987b24f494586a1e923209/pyproject.toml#L58)
 
-3. When you upgrade to a new version of MishikaLLM, the migration file is applied to the database. [See code](https://github.com/BerriAI/mishikallm/blob/52b35cd8093b9ad833987b24f494586a1e923209/mishikallm-proxy-extras/mishikallm_proxy_extras/utils.py#L42)
+3. When you upgrade to a new version of MishikaLLM, the migration file is applied to the database. [See code](https://github.com/skorpland/mishikallm/blob/52b35cd8093b9ad833987b24f494586a1e923209/mishikallm-proxy-extras/mishikallm_proxy_extras/utils.py#L42)
 
 
 ### Read-only File System

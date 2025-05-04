@@ -276,7 +276,7 @@ def set_openrouter_api_key():
 @pytest.mark.asyncio
 async def test_extra_body_with_fallback(respx_mock: respx.MockRouter, set_openrouter_api_key):
     """
-    test regression for https://github.com/BerriAI/mishikallm/issues/8425.
+    test regression for https://github.com/skorpland/mishikallm/issues/8425.
 
     This was perhaps a wider issue with the acompletion function not passing kwargs such as extra_body correctly when fallbacks are specified.
     """

@@ -3,7 +3,7 @@
 * [Supported OpenAI LLMs](https://docs.21t.cc/docs/providers/openai)
 * [Supported Azure OpenAI LLMs](https://docs.21t.cc/docs/providers/azure)
 
-<a target="_blank" href="https://colab.research.google.com/github/BerriAI/mishikallm/blob/main/cookbook/MishikaLLM_Azure_and_OpenAI_example.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/skorpland/mishikallm/blob/main/cookbook/MishikaLLM_Azure_and_OpenAI_example.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 

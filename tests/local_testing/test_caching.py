@@ -672,7 +672,7 @@ async def test_embedding_caching_redis_ttl():
     """
     Test default_in_redis_ttl is used for embedding caching
 
-    issue: https://github.com/BerriAI/mishikallm/issues/6010
+    issue: https://github.com/skorpland/mishikallm/issues/6010
     """
     mishikallm.set_verbose = True
 
@@ -1815,7 +1815,7 @@ async def test_redis_semantic_cache_acompletion():
 
 def test_caching_redis_simple(caplog, capsys):
     """
-    Relevant issue - https://github.com/BerriAI/mishikallm/issues/4511
+    Relevant issue - https://github.com/skorpland/mishikallm/issues/4511
     """
     mishikallm.set_verbose = True  ## REQUIRED FOR TEST.
     mishikallm.cache = Cache(

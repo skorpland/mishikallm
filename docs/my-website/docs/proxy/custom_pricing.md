@@ -12,7 +12,7 @@ By default, the response cost is accessible in the logging object via `kwargs["r
 
 :::info
 
-MishikaLLM already has pricing for any model in our [model cost map](https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json). 
+MishikaLLM already has pricing for any model in our [model cost map](https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json). 
 
 :::
 
@@ -64,7 +64,7 @@ model_list:
 
 ## Override Model Cost Map
 
-You can override [our model cost map](https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json) with your own custom pricing for a mapped model.
+You can override [our model cost map](https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json) with your own custom pricing for a mapped model.
 
 Just add a `model_info` key to your model in the config, and override the desired keys.
 
@@ -89,7 +89,7 @@ model_list:
 
 **Solution** ✅ :  Set `base_model` on your config so mishikallm uses the correct model for calculating azure cost
 
-Get the base model name from [here](https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json)
+Get the base model name from [here](https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json)
 
 Example config with `base_model`
 ```yaml
@@ -133,4 +133,4 @@ acompletion(
 
 If these keys are not present, MishikaLLM will not use your custom pricing. 
 
-If the problem persists, please file an issue on [GitHub](https://github.com/BerriAI/mishikallm/issues). 
+If the problem persists, please file an issue on [GitHub](https://github.com/skorpland/mishikallm/issues). 

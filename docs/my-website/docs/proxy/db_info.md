@@ -6,7 +6,7 @@ The MishikaLLM Proxy uses a PostgreSQL database to store various information. He
 
 ## Link to DB Schema
 
-You can see the full DB Schema [here](https://github.com/BerriAI/mishikallm/blob/main/schema.prisma)
+You can see the full DB Schema [here](https://github.com/skorpland/mishikallm/blob/main/schema.prisma)
 
 ## DB Tables
 

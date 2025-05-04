@@ -86,93 +86,93 @@ export MISHIKALLM_RATE_LIMIT_ACCURACY=true
 
 ## New Models / Updated Models
 - **Gemini ([VertexAI](https://docs.21t.cc/docs/providers/vertex#usage-with-mishikallm-proxy-server) + [Google AI Studio](https://docs.21t.cc/docs/providers/gemini))**
-    - Handle more json schema - openapi schema conversion edge cases [PR](https://github.com/BerriAI/mishikallm/pull/10351)
-    - Tool calls - return ‘finish_reason=“tool_calls”’ on gemini tool calling response [PR](https://github.com/BerriAI/mishikallm/pull/10485)
+    - Handle more json schema - openapi schema conversion edge cases [PR](https://github.com/skorpland/mishikallm/pull/10351)
+    - Tool calls - return ‘finish_reason=“tool_calls”’ on gemini tool calling response [PR](https://github.com/skorpland/mishikallm/pull/10485)
 - **[VertexAI](../../docs/providers/vertex#metallama-api)**
-    - Meta/llama-4 model support [PR](https://github.com/BerriAI/mishikallm/pull/10492)
-    - Meta/llama3 - handle tool call result in content [PR](https://github.com/BerriAI/mishikallm/pull/10492)
-    - Meta/* - return ‘finish_reason=“tool_calls”’ on tool calling response [PR](https://github.com/BerriAI/mishikallm/pull/10492)
+    - Meta/llama-4 model support [PR](https://github.com/skorpland/mishikallm/pull/10492)
+    - Meta/llama3 - handle tool call result in content [PR](https://github.com/skorpland/mishikallm/pull/10492)
+    - Meta/* - return ‘finish_reason=“tool_calls”’ on tool calling response [PR](https://github.com/skorpland/mishikallm/pull/10492)
 - **[Bedrock](../../docs/providers/bedrock#mishikallm-proxy-usage)**
-    - [Image Generation](../../docs/providers/bedrock#image-generation) - Support new ‘stable-image-core’ models - [PR](https://github.com/BerriAI/mishikallm/pull/10351)
-    - [Knowledge Bases](../../docs/completion/knowledgebase) - support using Bedrock knowledge bases with `/chat/completions` [PR](https://github.com/BerriAI/mishikallm/pull/10413)
-    - [Anthropic](../../docs/providers/bedrock#mishikallm-proxy-usage) - add ‘supports_pdf_input’ for claude-3.7-bedrock models [PR](https://github.com/BerriAI/mishikallm/pull/9917), [Get Started](../../docs/completion/document_understanding#checking-if-a-model-supports-pdf-input)
+    - [Image Generation](../../docs/providers/bedrock#image-generation) - Support new ‘stable-image-core’ models - [PR](https://github.com/skorpland/mishikallm/pull/10351)
+    - [Knowledge Bases](../../docs/completion/knowledgebase) - support using Bedrock knowledge bases with `/chat/completions` [PR](https://github.com/skorpland/mishikallm/pull/10413)
+    - [Anthropic](../../docs/providers/bedrock#mishikallm-proxy-usage) - add ‘supports_pdf_input’ for claude-3.7-bedrock models [PR](https://github.com/skorpland/mishikallm/pull/9917), [Get Started](../../docs/completion/document_understanding#checking-if-a-model-supports-pdf-input)
 - **[OpenAI](../../docs/providers/openai)**
-    - Support OPENAI_BASE_URL in addition to OPENAI_API_BASE [PR](https://github.com/BerriAI/mishikallm/pull/10423)
-    - Correctly re-raise 504 timeout errors [PR](https://github.com/BerriAI/mishikallm/pull/10462)
-    - Native Gpt-4o-mini-tts support [PR](https://github.com/BerriAI/mishikallm/pull/10462)
-- 🆕 **[Meta Llama API](../../docs/providers/meta_llama)** provider [PR](https://github.com/BerriAI/mishikallm/pull/10451)
-- 🆕 **[LlamaFile](../../docs/providers/llamafile)** provider [PR](https://github.com/BerriAI/mishikallm/pull/10482)
+    - Support OPENAI_BASE_URL in addition to OPENAI_API_BASE [PR](https://github.com/skorpland/mishikallm/pull/10423)
+    - Correctly re-raise 504 timeout errors [PR](https://github.com/skorpland/mishikallm/pull/10462)
+    - Native Gpt-4o-mini-tts support [PR](https://github.com/skorpland/mishikallm/pull/10462)
+- 🆕 **[Meta Llama API](../../docs/providers/meta_llama)** provider [PR](https://github.com/skorpland/mishikallm/pull/10451)
+- 🆕 **[LlamaFile](../../docs/providers/llamafile)** provider [PR](https://github.com/skorpland/mishikallm/pull/10482)
 
 ## LLM API Endpoints
 - **[Response API](../../docs/response_api)** 
-    - Fix for handling multi turn sessions [PR](https://github.com/BerriAI/mishikallm/pull/10415)
+    - Fix for handling multi turn sessions [PR](https://github.com/skorpland/mishikallm/pull/10415)
 - **[Embeddings](../../docs/embedding/supported_embedding)**
-    - Caching fixes - [PR](https://github.com/BerriAI/mishikallm/pull/10424)
+    - Caching fixes - [PR](https://github.com/skorpland/mishikallm/pull/10424)
         - handle str -> list cache
         - Return usage tokens for cache hit 
         - Combine usage tokens on partial cache hits 
 - 🆕 **[Vector Stores](../../docs/completion/knowledgebase)**
-    - Allow defining Vector Store Configs - [PR](https://github.com/BerriAI/mishikallm/pull/10448)
-    - New StandardLoggingPayload field for requests made when a vector store is used - [PR](https://github.com/BerriAI/mishikallm/pull/10509)
-    - Show Vector Store / KB Request on MishikaLLM Logs Page  - [PR](https://github.com/BerriAI/mishikallm/pull/10514)
-    - Allow using vector store in OpenAI API spec with tools - [PR](https://github.com/BerriAI/mishikallm/pull/10516)
+    - Allow defining Vector Store Configs - [PR](https://github.com/skorpland/mishikallm/pull/10448)
+    - New StandardLoggingPayload field for requests made when a vector store is used - [PR](https://github.com/skorpland/mishikallm/pull/10509)
+    - Show Vector Store / KB Request on MishikaLLM Logs Page  - [PR](https://github.com/skorpland/mishikallm/pull/10514)
+    - Allow using vector store in OpenAI API spec with tools - [PR](https://github.com/skorpland/mishikallm/pull/10516)
 - **[MCP](../../docs/mcp)**
-    - Ensure Non-Admin virtual keys can access /mcp routes - [PR](https://github.com/BerriAI/mishikallm/pull/10473)
+    - Ensure Non-Admin virtual keys can access /mcp routes - [PR](https://github.com/skorpland/mishikallm/pull/10473)
       
-      **Note:** Currently, all Virtual Keys are able to access the MCP endpoints. We are working on a feature to allow restricting MCP access by keys/teams/users/orgs. Follow [here](https://github.com/BerriAI/mishikallm/discussions/9891) for updates.
+      **Note:** Currently, all Virtual Keys are able to access the MCP endpoints. We are working on a feature to allow restricting MCP access by keys/teams/users/orgs. Follow [here](https://github.com/skorpland/mishikallm/discussions/9891) for updates.
 - **Moderations**
-    - Add logging callback support for `/moderations` API - [PR](https://github.com/BerriAI/mishikallm/pull/10390)
+    - Add logging callback support for `/moderations` API - [PR](https://github.com/skorpland/mishikallm/pull/10390)
 
 
 ## Spend Tracking / Budget Improvements
 - **[OpenAI](../../docs/providers/openai)**
-    - [computer-use-preview](../../docs/providers/openai/responses_api#computer-use) cost tracking / pricing [PR](https://github.com/BerriAI/mishikallm/pull/10422)
-    - [gpt-4o-mini-tts](../../docs/providers/openai/text_to_speech) input cost tracking - [PR](https://github.com/BerriAI/mishikallm/pull/10462)
+    - [computer-use-preview](../../docs/providers/openai/responses_api#computer-use) cost tracking / pricing [PR](https://github.com/skorpland/mishikallm/pull/10422)
+    - [gpt-4o-mini-tts](../../docs/providers/openai/text_to_speech) input cost tracking - [PR](https://github.com/skorpland/mishikallm/pull/10462)
 - **[Fireworks AI](../../docs/providers/fireworks_ai)** - pricing updates - new `0-4b` model pricing tier + llama4 model pricing
 - **[Budgets](../../docs/proxy/users#set-budgets)**
-    - [Budget resets](../../docs/proxy/users#reset-budgets) now happen as start of day/week/month - [PR](https://github.com/BerriAI/mishikallm/pull/10333)
-    - Trigger [Soft Budget Alerts](../../docs/proxy/alerting#soft-budget-alerts-for-virtual-keys) When Key Crosses Threshold - [PR](https://github.com/BerriAI/mishikallm/pull/10491)
+    - [Budget resets](../../docs/proxy/users#reset-budgets) now happen as start of day/week/month - [PR](https://github.com/skorpland/mishikallm/pull/10333)
+    - Trigger [Soft Budget Alerts](../../docs/proxy/alerting#soft-budget-alerts-for-virtual-keys) When Key Crosses Threshold - [PR](https://github.com/skorpland/mishikallm/pull/10491)
 - **[Token Counting](../../docs/completion/token_usage#3-token_counter)**
-    - Rewrite of token_counter() function to handle to prevent undercounting tokens - [PR](https://github.com/BerriAI/mishikallm/pull/10409)
+    - Rewrite of token_counter() function to handle to prevent undercounting tokens - [PR](https://github.com/skorpland/mishikallm/pull/10409)
 
 
 ## Management Endpoints / UI
 - **Virtual Keys**
-    - Fix filtering on key alias - [PR](https://github.com/BerriAI/mishikallm/pull/10455)
-    - Support global filtering on keys - [PR](https://github.com/BerriAI/mishikallm/pull/10455)
-    - Pagination - fix clicking on next/back buttons on table - [PR](https://github.com/BerriAI/mishikallm/pull/10528)
+    - Fix filtering on key alias - [PR](https://github.com/skorpland/mishikallm/pull/10455)
+    - Support global filtering on keys - [PR](https://github.com/skorpland/mishikallm/pull/10455)
+    - Pagination - fix clicking on next/back buttons on table - [PR](https://github.com/skorpland/mishikallm/pull/10528)
 - **Models**
-    - Triton - Support adding model/provider on UI - [PR](https://github.com/BerriAI/mishikallm/pull/10456)
-    - VertexAI - Fix adding vertex models with reusable credentials - [PR](https://github.com/BerriAI/mishikallm/pull/10528)
-    - LLM Credentials - show existing credentials for easy editing - [PR](https://github.com/BerriAI/mishikallm/pull/10519)
+    - Triton - Support adding model/provider on UI - [PR](https://github.com/skorpland/mishikallm/pull/10456)
+    - VertexAI - Fix adding vertex models with reusable credentials - [PR](https://github.com/skorpland/mishikallm/pull/10528)
+    - LLM Credentials - show existing credentials for easy editing - [PR](https://github.com/skorpland/mishikallm/pull/10519)
 - **Teams**
-    - Allow reassigning team to other org - [PR](https://github.com/BerriAI/mishikallm/pull/10527)
+    - Allow reassigning team to other org - [PR](https://github.com/skorpland/mishikallm/pull/10527)
 - **Organizations**
-    - Fix showing org budget on table - [PR](https://github.com/BerriAI/mishikallm/pull/10528)
+    - Fix showing org budget on table - [PR](https://github.com/skorpland/mishikallm/pull/10528)
 
 
 
 ## Logging / Guardrail Integrations
 - **[Langsmith](../../docs/observability/langsmith_integration)**
-    - Respect [langsmith_batch_size](../../docs/observability/langsmith_integration#local-testing---control-batch-size) param - [PR](https://github.com/BerriAI/mishikallm/pull/10411)
+    - Respect [langsmith_batch_size](../../docs/observability/langsmith_integration#local-testing---control-batch-size) param - [PR](https://github.com/skorpland/mishikallm/pull/10411)
 
 ## Performance / Loadbalancing / Reliability improvements
 - **[Redis](../../docs/proxy/caching)**
-    - Ensure all redis queues are periodically flushed, this fixes an issue where redis queue size was growing indefinitely when request tags were used - [PR](https://github.com/BerriAI/mishikallm/pull/10393)
+    - Ensure all redis queues are periodically flushed, this fixes an issue where redis queue size was growing indefinitely when request tags were used - [PR](https://github.com/skorpland/mishikallm/pull/10393)
 - **[Rate Limits](../../docs/proxy/users#set-rate-limit)**
-    - [Multi-instance rate limiting](../../docs/proxy/users#beta-multi-instance-rate-limiting) support across keys/teams/users/customers - [PR](https://github.com/BerriAI/mishikallm/pull/10458), [PR](https://github.com/BerriAI/mishikallm/pull/10497), [PR](https://github.com/BerriAI/mishikallm/pull/10500)
+    - [Multi-instance rate limiting](../../docs/proxy/users#beta-multi-instance-rate-limiting) support across keys/teams/users/customers - [PR](https://github.com/skorpland/mishikallm/pull/10458), [PR](https://github.com/skorpland/mishikallm/pull/10497), [PR](https://github.com/skorpland/mishikallm/pull/10500)
 - **[Azure OpenAI OIDC](../../docs/providers/azure#entra-id---use-azure_ad_token)**
-    - allow using mishikallm defined params for [OIDC Auth](../../docs/providers/azure#entra-id---use-azure_ad_token) - [PR](https://github.com/BerriAI/mishikallm/pull/10394)
+    - allow using mishikallm defined params for [OIDC Auth](../../docs/providers/azure#entra-id---use-azure_ad_token) - [PR](https://github.com/skorpland/mishikallm/pull/10394)
 
 
 ## General Proxy Improvements
 - **Security**
-    - Allow [blocking web crawlers](../../docs/proxy/enterprise#blocking-web-crawlers) - [PR](https://github.com/BerriAI/mishikallm/pull/10420)
+    - Allow [blocking web crawlers](../../docs/proxy/enterprise#blocking-web-crawlers) - [PR](https://github.com/skorpland/mishikallm/pull/10420)
 - **Auth**
-    - Support [`x-mishikallm-api-key` header param by default](../../docs/pass_through/vertex_ai#use-with-virtual-keys), this fixes an issue from the prior release where `x-mishikallm-api-key` was not being used on vertex ai passthrough requests - [PR](https://github.com/BerriAI/mishikallm/pull/10392)
-    - Allow key at max budget to call non-llm api endpoints - [PR](https://github.com/BerriAI/mishikallm/pull/10392)
+    - Support [`x-mishikallm-api-key` header param by default](../../docs/pass_through/vertex_ai#use-with-virtual-keys), this fixes an issue from the prior release where `x-mishikallm-api-key` was not being used on vertex ai passthrough requests - [PR](https://github.com/skorpland/mishikallm/pull/10392)
+    - Allow key at max budget to call non-llm api endpoints - [PR](https://github.com/skorpland/mishikallm/pull/10392)
 - 🆕 **[Python Client Library](../../docs/proxy/management_client) for MishikaLLM Proxy management endpoints**
-    - Initial PR - [PR](https://github.com/BerriAI/mishikallm/pull/10445)
-    - Support for doing HTTP requests - [PR](https://github.com/BerriAI/mishikallm/pull/10452)
+    - Initial PR - [PR](https://github.com/skorpland/mishikallm/pull/10445)
+    - Support for doing HTTP requests - [PR](https://github.com/skorpland/mishikallm/pull/10452)
 - **Dependencies**
-    - Don’t require uvloop for windows - [PR](https://github.com/BerriAI/mishikallm/pull/10483)
+    - Don’t require uvloop for windows - [PR](https://github.com/skorpland/mishikallm/pull/10483)

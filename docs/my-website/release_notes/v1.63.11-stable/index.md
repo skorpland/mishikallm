@@ -52,12 +52,12 @@ Here's a Demo Instance to test changes:
 ## New Models / Updated Models
 
 - Image Generation support for Amazon Nova Canvas [Getting Started](https://docs.21t.cc/docs/providers/bedrock#image-generation)
-- Add pricing for Jamba new models [PR](https://github.com/BerriAI/mishikallm/pull/9032/files)
-- Add pricing for Amazon EU models [PR](https://github.com/BerriAI/mishikallm/pull/9056/files)
-- Add Bedrock Deepseek R1 model pricing [PR](https://github.com/BerriAI/mishikallm/pull/9108/files)
-- Update Gemini pricing: Gemma 3, Flash 2 thinking update, LearnLM [PR](https://github.com/BerriAI/mishikallm/pull/9190/files)
-- Mark Cohere Embedding 3 models as Multimodal [PR](https://github.com/BerriAI/mishikallm/pull/9176/commits/c9a576ce4221fc6e50dc47cdf64ab62736c9da41)
-- Add Azure Data Zone pricing [PR](https://github.com/BerriAI/mishikallm/pull/9185/files#diff-19ad91c53996e178c1921cbacadf6f3bae20cfe062bd03ee6bfffb72f847ee37)
+- Add pricing for Jamba new models [PR](https://github.com/skorpland/mishikallm/pull/9032/files)
+- Add pricing for Amazon EU models [PR](https://github.com/skorpland/mishikallm/pull/9056/files)
+- Add Bedrock Deepseek R1 model pricing [PR](https://github.com/skorpland/mishikallm/pull/9108/files)
+- Update Gemini pricing: Gemma 3, Flash 2 thinking update, LearnLM [PR](https://github.com/skorpland/mishikallm/pull/9190/files)
+- Mark Cohere Embedding 3 models as Multimodal [PR](https://github.com/skorpland/mishikallm/pull/9176/commits/c9a576ce4221fc6e50dc47cdf64ab62736c9da41)
+- Add Azure Data Zone pricing [PR](https://github.com/skorpland/mishikallm/pull/9185/files#diff-19ad91c53996e178c1921cbacadf6f3bae20cfe062bd03ee6bfffb72f847ee37)
    - MishikaLLM Tracks cost for `azure/eu` and `azure/us` models
 
 
@@ -79,16 +79,16 @@ Here's a Demo Instance to test changes:
 4. **Bug Fixes**
 
 - OpenAI: Return `code`, `param` and `type` on bad request error [More information on mishikallm exceptions](https://docs.21t.cc/docs/exception_mapping)
-- Bedrock: Fix converse chunk parsing to only return empty dict on tool use [PR](https://github.com/BerriAI/mishikallm/pull/9166)
-- Bedrock: Support extra_headers [PR](https://github.com/BerriAI/mishikallm/pull/9113)
-- Azure: Fix Function Calling Bug & Update Default API Version to `2025-02-01-preview` [PR](https://github.com/BerriAI/mishikallm/pull/9191)
-- Azure: Fix AI services URL [PR](https://github.com/BerriAI/mishikallm/pull/9185)
-- Vertex AI: Handle HTTP 201 status code in response [PR](https://github.com/BerriAI/mishikallm/pull/9193)
-- Perplexity: Fix incorrect streaming response [PR](https://github.com/BerriAI/mishikallm/pull/9081)
-- Triton: Fix streaming completions bug [PR](https://github.com/BerriAI/mishikallm/pull/8386)
-- Deepgram: Support bytes.IO when handling audio files for transcription [PR](https://github.com/BerriAI/mishikallm/pull/9071)
-- Ollama: Fix "system" role has become unacceptable [PR](https://github.com/BerriAI/mishikallm/pull/9261)
-- All Providers (Streaming): Fix String `data:` stripped from entire content in streamed responses [PR](https://github.com/BerriAI/mishikallm/pull/9070)
+- Bedrock: Fix converse chunk parsing to only return empty dict on tool use [PR](https://github.com/skorpland/mishikallm/pull/9166)
+- Bedrock: Support extra_headers [PR](https://github.com/skorpland/mishikallm/pull/9113)
+- Azure: Fix Function Calling Bug & Update Default API Version to `2025-02-01-preview` [PR](https://github.com/skorpland/mishikallm/pull/9191)
+- Azure: Fix AI services URL [PR](https://github.com/skorpland/mishikallm/pull/9185)
+- Vertex AI: Handle HTTP 201 status code in response [PR](https://github.com/skorpland/mishikallm/pull/9193)
+- Perplexity: Fix incorrect streaming response [PR](https://github.com/skorpland/mishikallm/pull/9081)
+- Triton: Fix streaming completions bug [PR](https://github.com/skorpland/mishikallm/pull/8386)
+- Deepgram: Support bytes.IO when handling audio files for transcription [PR](https://github.com/skorpland/mishikallm/pull/9071)
+- Ollama: Fix "system" role has become unacceptable [PR](https://github.com/skorpland/mishikallm/pull/9261)
+- All Providers (Streaming): Fix String `data:` stripped from entire content in streamed responses [PR](https://github.com/skorpland/mishikallm/pull/9070)
 
 
 
@@ -155,7 +155,7 @@ Before adding a model you can test the connection to the LLM provider to verify 
 
 ## Performance / Reliability improvements
 
-1. Redis + mishikallm router - Fix Redis cluster mode for mishikallm router [PR](https://github.com/BerriAI/mishikallm/pull/9010)
+1. Redis + mishikallm router - Fix Redis cluster mode for mishikallm router [PR](https://github.com/skorpland/mishikallm/pull/9010)
 
 
 ## General Improvements
@@ -169,4 +169,4 @@ Before adding a model you can test the connection to the LLM provider to verify 
 
 ## Complete Git Diff
 
-[Here's the complete git diff](https://github.com/BerriAI/mishikallm/compare/v1.63.2-stable...v1.63.11-stable)
+[Here's the complete git diff](https://github.com/skorpland/mishikallm/compare/v1.63.2-stable...v1.63.11-stable)

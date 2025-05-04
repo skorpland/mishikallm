@@ -1051,7 +1051,7 @@ def test_proxy_config_state_post_init_callback_call():
     """
     Ensures team_id is still in config, after callback is called
 
-    Addresses issue: https://github.com/BerriAI/mishikallm/issues/6787
+    Addresses issue: https://github.com/skorpland/mishikallm/issues/6787
 
     Where team_id was being popped from config, after callback was called
     """

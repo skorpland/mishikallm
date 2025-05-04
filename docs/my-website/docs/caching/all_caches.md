@@ -3,7 +3,7 @@ import TabItem from '@theme/TabItem';
 
 # Caching - In-Memory, Redis, s3, Redis Semantic Cache, Disk
 
-[**See Code**](https://github.com/BerriAI/mishikallm/blob/main/mishikallm/caching/caching.py)
+[**See Code**](https://github.com/skorpland/mishikallm/blob/main/mishikallm/caching/caching.py)
 
 :::info
 
@@ -281,7 +281,7 @@ MishikaLLM supports 4 cache-controls:
 - `ttl`: *Optional(int)* - Will cache the response for the user-defined amount of time (in seconds).
 - `s-maxage`: *Optional(int)* Will only accept cached responses that are within user-defined range (in seconds).
 
-[Let us know if you need more](https://github.com/BerriAI/mishikallm/issues/1218)
+[Let us know if you need more](https://github.com/skorpland/mishikallm/issues/1218)
 <Tabs>
 <TabItem value="no-cache" label="No-Cache">
 

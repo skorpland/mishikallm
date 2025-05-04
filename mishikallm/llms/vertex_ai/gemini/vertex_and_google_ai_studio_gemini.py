@@ -750,7 +750,7 @@ class VertexGeminiConfig(VertexAIBaseConfig, BaseConfig):
 
         else the candidate token count is exclusive of the thinking token count
 
-        Addresses - https://github.com/BerriAI/mishikallm/pull/10141#discussion_r2052272035
+        Addresses - https://github.com/skorpland/mishikallm/pull/10141#discussion_r2052272035
         """
         if usage_metadata.get("promptTokenCount", 0) + usage_metadata.get(
             "candidatesTokenCount", 0
@@ -922,7 +922,7 @@ class VertexGeminiConfig(VertexAIBaseConfig, BaseConfig):
             completion_response = GenerateContentResponseBody(**raw_response.json())  # type: ignore
         except Exception as e:
             raise VertexAIError(
-                message="Received={}, Error converting to valid response block={}. File an issue if mishikallm error - https://github.com/BerriAI/mishikallm/issues".format(
+                message="Received={}, Error converting to valid response block={}. File an issue if mishikallm error - https://github.com/skorpland/mishikallm/issues".format(
                     raw_response.text, str(e)
                 ),
                 status_code=422,
@@ -991,7 +991,7 @@ class VertexGeminiConfig(VertexAIBaseConfig, BaseConfig):
 
         except Exception as e:
             raise VertexAIError(
-                message="Received={}, Error converting to valid response block={}. File an issue if mishikallm error - https://github.com/BerriAI/mishikallm/issues".format(
+                message="Received={}, Error converting to valid response block={}. File an issue if mishikallm error - https://github.com/skorpland/mishikallm/issues".format(
                     completion_response, str(e)
                 ),
                 status_code=422,

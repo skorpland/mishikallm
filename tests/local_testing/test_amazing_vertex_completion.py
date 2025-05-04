@@ -3137,7 +3137,7 @@ async def test_vertexai_model_garden_model_completion(
     respx_mock: MockRouter, max_retries
 ):
     """
-    Relevant issue: https://github.com/BerriAI/mishikallm/issues/6480
+    Relevant issue: https://github.com/skorpland/mishikallm/issues/6480
 
     Using OpenAI compatible models from Vertex Model Garden
     """

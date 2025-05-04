@@ -157,7 +157,7 @@ response = completion(
 
 ## Usage - Thinking / `reasoning_content`
 
-MishikaLLM translates OpenAI's `reasoning_effort` to Anthropic's `thinking` parameter. [Code](https://github.com/BerriAI/mishikallm/blob/23051d89dd3611a81617d84277059cd88b2df511/mishikallm/llms/anthropic/chat/transformation.py#L298)
+MishikaLLM translates OpenAI's `reasoning_effort` to Anthropic's `thinking` parameter. [Code](https://github.com/skorpland/mishikallm/blob/23051d89dd3611a81617d84277059cd88b2df511/mishikallm/llms/anthropic/chat/transformation.py#L298)
 
 | reasoning_effort | thinking |
 | ---------------- | -------- |
@@ -167,7 +167,7 @@ MishikaLLM translates OpenAI's `reasoning_effort` to Anthropic's `thinking` para
 
 
 Known Limitations:
-- Support for passing thinking blocks back to Claude [Issue](https://github.com/BerriAI/mishikallm/issues/9790)
+- Support for passing thinking blocks back to Claude [Issue](https://github.com/skorpland/mishikallm/issues/9790)
  
 
 <Tabs>
@@ -354,7 +354,7 @@ curl http://0.0.0.0:4000/v1/chat/completions \
 
 ### Passing Databricks specific params - 'instruction'
 
-For embedding models, databricks lets you pass in an additional param 'instruction'. [Full Spec](https://github.com/BerriAI/mishikallm/blob/43353c28b341df0d9992b45c6ce464222ebd7984/mishikallm/llms/databricks.py#L164)
+For embedding models, databricks lets you pass in an additional param 'instruction'. [Full Spec](https://github.com/skorpland/mishikallm/blob/43353c28b341df0d9992b45c6ce464222ebd7984/mishikallm/llms/databricks.py#L164)
 
 
 ```python

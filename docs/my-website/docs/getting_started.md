@@ -33,7 +33,7 @@ More details 👉
 
 - [Completion() function details](./completion/)
 - [All supported models / providers on MishikaLLM](./providers/)
-- [Build your own OpenAI proxy](https://github.com/BerriAI/mishikaLLM-proxy/tree/main)
+- [Build your own OpenAI proxy](https://github.com/skorpland/mishikaLLM-proxy/tree/main)
 
 ## streaming
 

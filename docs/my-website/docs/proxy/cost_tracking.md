@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 Track spend for keys, users, and teams across 100+ LLMs.
 
-MishikaLLM automatically tracks spend for all known models. See our [model cost map](https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json)
+MishikaLLM automatically tracks spend for all known models. See our [model cost map](https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json)
 
 ### How to Track Spend with MishikaLLM
 

@@ -936,7 +936,7 @@ def execute_completion(opts: dict):
     )
     print(assembly.choices[0].message.tool_calls)
     for tool_call in assembly.choices[0].message.tool_calls:
-        json.loads(tool_call.function.arguments) # assert valid json - https://github.com/BerriAI/mishikallm/issues/10034
+        json.loads(tool_call.function.arguments) # assert valid json - https://github.com/skorpland/mishikallm/issues/10034
 
 
 def test_grok_bug(load_env):

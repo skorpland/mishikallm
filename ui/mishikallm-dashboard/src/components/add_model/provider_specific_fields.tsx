@@ -452,7 +452,7 @@ const ProviderSpecificFields: React.FC<ProviderSpecificFieldsProps> = ({
                   The actual model your azure deployment uses. Used
                   for accurate cost tracking. Select name from{" "}
                   <Link
-                    href="https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json"
+                    href="https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json"
                     target="_blank"
                   >
                     here

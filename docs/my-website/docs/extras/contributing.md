@@ -7,7 +7,7 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 Clone mishikallm 
 ```
-git clone https://github.com/BerriAI/mishikallm.git
+git clone https://github.com/skorpland/mishikallm.git
 ```
 
 ### Local setup for locally running docs
@@ -65,4 +65,4 @@ This command builds your Markdown files into HTML and starts a development serve
 ### Making changes to Docs
 - All the docs are placed under the `docs` directory
 - If you are adding a new `.md` file or editing the hierarchy edit `mkdocs.yml` in the root of the project
-- After testing your changes, make a change/pull request to the `main` branch of [github.com/BerriAI/mishikallm](https://github.com/BerriAI/mishikallm)
+- After testing your changes, make a change/pull request to the `main` branch of [github.com/skorpland/mishikallm](https://github.com/skorpland/mishikallm)

@@ -26,7 +26,7 @@ response = mishikallm.completion(
 
 MishikaLLM maps all supported openai params by provider + model (e.g. function calling is supported by anthropic on bedrock but not titan). 
 
-See `mishikallm.get_supported_openai_params("command-r")` [**Code**](https://github.com/BerriAI/mishikallm/blob/main/mishikallm/utils.py#L3584)
+See `mishikallm.get_supported_openai_params("command-r")` [**Code**](https://github.com/skorpland/mishikallm/blob/main/mishikallm/utils.py#L3584)
 
 If a provider/model doesn't support a particular param, you can drop it. 
 

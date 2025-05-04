@@ -2,7 +2,7 @@
 # |                                               |
 # |               PII Masking                     |
 # |         with Microsoft Presidio               |
-# |   https://github.com/BerriAI/mishikallm/issues/  |
+# |   https://github.com/skorpland/mishikallm/issues/  |
 # +-----------------------------------------------+
 #
 #  Tell us how we can improve! - Krrish & Ishaan

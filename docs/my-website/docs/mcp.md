@@ -426,4 +426,4 @@ async with stdio_client(server_params) as (read, write):
 
 Currently, all Virtual Keys are able to access the MCP endpoints. We are working on a feature to allow restricting MCP access by keys/teams/users/orgs.
 
-Join the discussion [here](https://github.com/BerriAI/mishikallm/discussions/9891)
+Join the discussion [here](https://github.com/skorpland/mishikallm/discussions/9891)

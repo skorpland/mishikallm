@@ -10,7 +10,7 @@ AI Observability and Evaluation Platform
 :::tip
 
 This is community maintained, Please make an issue if you run into a bug
-https://github.com/BerriAI/mishikallm
+https://github.com/skorpland/mishikallm
 
 :::
 

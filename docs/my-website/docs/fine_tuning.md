@@ -13,7 +13,7 @@ This is an Enterprise only endpoint [Get Started with Enterprise here](https://c
 | Feature | Supported | Notes | 
 |-------|-------|-------|
 | Supported Providers | OpenAI, Azure OpenAI, Vertex AI | - |
-| Cost Tracking | 🟡 | [Let us know if you need this](https://github.com/BerriAI/mishikallm/issues) |
+| Cost Tracking | 🟡 | [Let us know if you need this](https://github.com/skorpland/mishikallm/issues) |
 | Logging | ✅ | Works across all logging integrations |
 
 

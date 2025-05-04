@@ -15,7 +15,7 @@ def get_api_base(
 
     Parameters:
     - model: str - the model passed to mishikallm.completion()
-    - optional_params - the 'mishikallm_params' in router.completion *OR* additional params passed to mishikallm.completion - eg. api_base, api_key, etc. See `MishikaLLM_Params` - https://github.com/BerriAI/mishikallm/blob/f09e6ba98d65e035a79f73bc069145002ceafd36/mishikallm/router.py#L67
+    - optional_params - the 'mishikallm_params' in router.completion *OR* additional params passed to mishikallm.completion - eg. api_base, api_key, etc. See `MishikaLLM_Params` - https://github.com/skorpland/mishikallm/blob/f09e6ba98d65e035a79f73bc069145002ceafd36/mishikallm/router.py#L67
 
     Returns:
     - string (api_base) or None

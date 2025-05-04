@@ -138,7 +138,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/BerriAI/mishikallm',
+            href: 'https://github.com/skorpland/mishikallm',
             label: 'GitHub',
             position: 'right',
           },
@@ -179,7 +179,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/BerriAI/mishikallm/',
+                href: 'https://github.com/skorpland/mishikallm/',
               },
             ],
           },

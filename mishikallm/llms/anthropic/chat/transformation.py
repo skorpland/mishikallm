@@ -123,7 +123,7 @@ class AnthropicConfig(AnthropicModelInfo, BaseConfig):
     ) -> Optional[dict]:
         return type_to_response_format_param(
             response_format, ref_template="/$defs/{model}"
-        )  # Relevant issue: https://github.com/BerriAI/mishikallm/issues/7755
+        )  # Relevant issue: https://github.com/skorpland/mishikallm/issues/7755
 
     def get_cache_control_headers(self) -> dict:
         return {
@@ -805,7 +805,7 @@ class AnthropicConfig(AnthropicModelInfo, BaseConfig):
                     return _message
                 else:
                     # a lot of the times the `values` key is not present in the tool response
-                    # relevant issue: https://github.com/BerriAI/mishikallm/issues/6741
+                    # relevant issue: https://github.com/skorpland/mishikallm/issues/6741
                     _message = mishikallm.Message(content=json.dumps(args))
                     return _message
         except json.JSONDecodeError:

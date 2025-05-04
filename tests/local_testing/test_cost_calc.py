@@ -61,7 +61,7 @@ router = Router(
 )
 def test_run(model: str):
     """
-    Relevant issue - https://github.com/BerriAI/mishikallm/issues/4965
+    Relevant issue - https://github.com/skorpland/mishikallm/issues/4965
     """
     mishikallm.set_verbose = True
     prompt = "Hi"

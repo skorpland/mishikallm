@@ -1,7 +1,7 @@
 """
 This is a file for the AWS Secret Manager Integration
 
-Relevant issue: https://github.com/BerriAI/mishikallm/issues/1883
+Relevant issue: https://github.com/skorpland/mishikallm/issues/1883
 
 Requires:
 * `os.environ["AWS_REGION_NAME"], 

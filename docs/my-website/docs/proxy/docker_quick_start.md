@@ -23,7 +23,7 @@ End-to-End tutorial for MishikaLLM Proxy to:
 docker pull ghcr.io/berriai/mishikallm:main-latest
 ```
 
-[**See all docker images**](https://github.com/orgs/BerriAI/packages)
+[**See all docker images**](https://github.com/orgs/skorpland/packages)
 
 </TabItem>
 
@@ -57,7 +57,7 @@ model_list:
 ### Model List Specification
 
 - **`model_name`** (`str`) - This field should contain the name of the model as received.
-- **`mishikallm_params`** (`dict`) [See All MishikaLLM Params](https://github.com/BerriAI/mishikallm/blob/559a6ad826b5daef41565f54f06c739c8c068b28/mishikallm/types/router.py#L222)
+- **`mishikallm_params`** (`dict`) [See All MishikaLLM Params](https://github.com/skorpland/mishikallm/blob/559a6ad826b5daef41565f54f06c739c8c068b28/mishikallm/types/router.py#L222)
     - **`model`** (`str`) - Specifies the model name to be sent to `mishikallm.acompletion` / `mishikallm.aembedding`, etc. This is the identifier used by MishikaLLM to route to the correct model + provider logic on the backend. 
     - **`api_key`** (`str`) - The API key required for authentication. It can be retrieved from an environment variable using `os.environ/`.
     - **`api_base`** (`str`) - The API base for your azure deployment.
@@ -351,7 +351,7 @@ curl -X POST 'http://0.0.0.0:4000/chat/completions' \
 
 ### Non-root docker image?
 
-If you need to run the docker image as a non-root user, use [this](https://github.com/BerriAI/mishikallm/pkgs/container/mishikallm-non_root).
+If you need to run the docker image as a non-root user, use [this](https://github.com/skorpland/mishikallm/pkgs/container/mishikallm-non_root).
 
 ### SSL Verification Issue / Connection Error.
 
@@ -436,7 +436,7 @@ GRANT ALL PRIVILEGES ON DATABASE mishikallm TO your_username;
 
 MishikaLLM Proxy uses the [MishikaLLM Python SDK](https://docs.21t.cc/docs/routing) for handling LLM API calls. 
 
-`mishikallm_settings` are module-level params for the MishikaLLM Python SDK (equivalent to doing `mishikallm.<some_param>` on the SDK). You can see all params [here](https://github.com/BerriAI/mishikallm/blob/208fe6cb90937f73e0def5c97ccb2359bf8a467b/mishikallm/__init__.py#L114)
+`mishikallm_settings` are module-level params for the MishikaLLM Python SDK (equivalent to doing `mishikallm.<some_param>` on the SDK). You can see all params [here](https://github.com/skorpland/mishikallm/blob/208fe6cb90937f73e0def5c97ccb2359bf8a467b/mishikallm/__init__.py#L114)
 
 ## Support & Talk with founders
 

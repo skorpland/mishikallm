@@ -5,7 +5,7 @@ import Image from '@theme/IdealImage';
 :::tip
 
 This is community maintained, Please make an issue if you run into a bug
-https://github.com/BerriAI/mishikallm
+https://github.com/skorpland/mishikallm
 
 :::
 
@@ -53,5 +53,5 @@ print(response)
 
 Set `mishikallm.turn_off_message_logging=True` This will prevent the messages and responses from being logged to sentry, but request metadata will still be logged.
 
-[Let us know](https://github.com/BerriAI/mishikallm/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.yml&title=%5BFeature%5D%3A+) if you need any additional options from Sentry. 
+[Let us know](https://github.com/skorpland/mishikallm/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.yml&title=%5BFeature%5D%3A+) if you need any additional options from Sentry. 
 

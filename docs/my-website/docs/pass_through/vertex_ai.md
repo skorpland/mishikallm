@@ -10,7 +10,7 @@ Pass-through endpoints for Vertex AI - call provider-specific endpoint, in nativ
 |-------|-------|-------|
 | Cost Tracking | ✅ | supports all models on `/generateContent` endpoint |
 | Logging | ✅ | works across all integrations |
-| End-user Tracking | ❌ | [Tell us if you need this](https://github.com/BerriAI/mishikallm/issues/new) |
+| End-user Tracking | ❌ | [Tell us if you need this](https://github.com/skorpland/mishikallm/issues/new) |
 | Streaming | ✅ | |
 
 ## Supported Endpoints

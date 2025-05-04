@@ -65,7 +65,7 @@ All data, user accounts, and infrastructure are completely separated between the
 - Any data generated or processed remains entirely within your own infrastructure.
 
 ### For MishikaLLM Cloud Users:
-- MishikaLLM Cloud tracks LLM usage data - We do not access or store the message / response content of your API requests or responses. You can see the [fields tracked here](https://github.com/BerriAI/mishikallm/blob/main/schema.prisma#L174)
+- MishikaLLM Cloud tracks LLM usage data - We do not access or store the message / response content of your API requests or responses. You can see the [fields tracked here](https://github.com/skorpland/mishikallm/blob/main/schema.prisma#L174)
 
 **How to Use and Share the Personal Data**
 - Only proxy admins can view their usage data, and they can only see the usage data of their organization.
@@ -112,7 +112,7 @@ We'll review all reports promptly. Note that we don't currently offer a bug boun
 ## Vulnerability Scanning
 
 - MishikaLLM runs [`grype`](https://github.com/anchore/grype) security scans on all built Docker images.
-    - See [`grype mishikallm` check on ci/cd](https://github.com/BerriAI/mishikallm/blob/main/.circleci/config.yml#L1099). 
+    - See [`grype mishikallm` check on ci/cd](https://github.com/skorpland/mishikallm/blob/main/.circleci/config.yml#L1099). 
     - Current Status: ✅ Passing. 0 High/Critical severity vulnerabilities found.
 
 ## Legal/Compliance FAQs
@@ -149,7 +149,7 @@ Does the Vendor have an established Cybersecurity incident management program?
 - Yes, Incident Response Policy available upon request.
 
 
-Does the vendor have a vulnerability disclosure policy in place? [Yes](https://github.com/BerriAI/mishikallm?tab=security-ov-file#security-vulnerability-reporting-guidelines)
+Does the vendor have a vulnerability disclosure policy in place? [Yes](https://github.com/skorpland/mishikallm?tab=security-ov-file#security-vulnerability-reporting-guidelines)
 
 Does the vendor perform vulnerability scans? 
 - Yes, regular vulnerability scans are conducted as detailed in the [Vulnerability Scanning](#vulnerability-scanning) section.

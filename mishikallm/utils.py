@@ -1,7 +1,7 @@
 # +-----------------------------------------------+
 # |                                               |
 # |           Give Feedback / Get Help            |
-# | https://github.com/BerriAI/mishikallm/issues/new |
+# | https://github.com/skorpland/mishikallm/issues/new |
 # |                                               |
 # +-----------------------------------------------+
 #
@@ -803,7 +803,7 @@ async def _client_async_logging_helper(
 ):
     if (
         is_completion_with_fallbacks is False
-    ):  # don't log the parent event mishikallm.completion_with_fallbacks as a 'log_success_event', this will lead to double logging the same call - https://github.com/BerriAI/mishikallm/issues/7477
+    ):  # don't log the parent event mishikallm.completion_with_fallbacks as a 'log_success_event', this will lead to double logging the same call - https://github.com/skorpland/mishikallm/issues/7477
         print_verbose(
             f"Async Wrapper: Completed Call, calling async_success_handler: {logging_obj.async_success_handler}"
         )
@@ -2515,7 +2515,7 @@ def _remove_additional_properties(schema):
     """
     clean out 'additionalProperties = False'. Causes vertexai/gemini OpenAI API Schema errors - https://github.com/langchain-ai/langchainjs/issues/5240
 
-    Relevant Issues: https://github.com/BerriAI/mishikallm/issues/6136, https://github.com/BerriAI/mishikallm/issues/6088
+    Relevant Issues: https://github.com/skorpland/mishikallm/issues/6136, https://github.com/skorpland/mishikallm/issues/6088
     """
     if isinstance(schema, dict):
         # Remove the 'additionalProperties' key if it exists and is set to False
@@ -2536,7 +2536,7 @@ def _remove_additional_properties(schema):
 
 def _remove_strict_from_schema(schema):
     """
-    Relevant Issues: https://github.com/BerriAI/mishikallm/issues/6136, https://github.com/BerriAI/mishikallm/issues/6088
+    Relevant Issues: https://github.com/skorpland/mishikallm/issues/6136, https://github.com/skorpland/mishikallm/issues/6088
     """
     if isinstance(schema, dict):
         # Remove the 'additionalProperties' key if it exists and is set to False
@@ -2799,7 +2799,7 @@ def get_optional_params(  # noqa: PLR0915
 
     if "tools" in non_default_params and isinstance(
         non_default_params, list
-    ):  # fixes https://github.com/BerriAI/mishikallm/issues/4933
+    ):  # fixes https://github.com/skorpland/mishikallm/issues/4933
         tools = non_default_params["tools"]
         for (
             tool
@@ -3933,7 +3933,7 @@ def get_max_tokens(model: str) -> Optional[int]:
         return None
     except Exception:
         raise Exception(
-            f"Model {model} isn't mapped yet. Add it here - https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json"
+            f"Model {model} isn't mapped yet. Add it here - https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json"
         )
 
 
@@ -4239,7 +4239,7 @@ def _get_model_info_helper(  # noqa: PLR0915
 
             if _model_info is None or key is None:
                 raise ValueError(
-                    "This model isn't mapped yet. Add it here - https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json"
+                    "This model isn't mapped yet. Add it here - https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json"
                 )
 
             _input_cost_per_token: Optional[float] = _model_info.get(
@@ -4363,7 +4363,7 @@ def _get_model_info_helper(  # noqa: PLR0915
         if "OllamaError" in str(e):
             raise e
         raise Exception(
-            "This model isn't mapped yet. model={}, custom_llm_provider={}. Add it here - https://github.com/BerriAI/mishikallm/blob/main/model_prices_and_context_window.json.".format(
+            "This model isn't mapped yet. model={}, custom_llm_provider={}. Add it here - https://github.com/skorpland/mishikallm/blob/main/model_prices_and_context_window.json.".format(
                 model, custom_llm_provider
             )
         )
@@ -5537,7 +5537,7 @@ def trim_messages(
                 system_message += "\n" if system_message else ""
                 system_message += message["content"]
 
-        ## Handle Tool Call ## - check if last message is a tool response, return as is - https://github.com/BerriAI/mishikallm/issues/4931
+        ## Handle Tool Call ## - check if last message is a tool response, return as is - https://github.com/skorpland/mishikallm/issues/4931
         tool_messages = []
 
         for message in reversed(messages):
@@ -6002,7 +6002,7 @@ def add_dummy_tool(custom_llm_provider: str) -> List[ChatCompletionToolParam]:
     """
     Prevent Anthropic from raising error when tool_use block exists but no tools are provided.
 
-    Relevent Issues: https://github.com/BerriAI/mishikallm/issues/5388, https://github.com/BerriAI/mishikallm/issues/5747
+    Relevent Issues: https://github.com/skorpland/mishikallm/issues/5388, https://github.com/skorpland/mishikallm/issues/5747
     """
     return [
         ChatCompletionToolParam(
@@ -6134,7 +6134,7 @@ def validate_chat_completion_tool_choice(
     """
     Confirm the tool choice is passed in the OpenAI format.
 
-    Prevents user errors like: https://github.com/BerriAI/mishikallm/issues/7483
+    Prevents user errors like: https://github.com/skorpland/mishikallm/issues/7483
     """
     from mishikallm.types.llms.openai import (
         ChatCompletionToolChoiceObjectParam,
@@ -6716,7 +6716,7 @@ def return_raw_request(endpoint: CallTypes, kwargs: dict) -> RawRequestTypedDict
 
 def jsonify_tools(tools: List[Any]) -> List[Dict]:
     """
-    Fixes https://github.com/BerriAI/mishikallm/issues/9321
+    Fixes https://github.com/skorpland/mishikallm/issues/9321
 
     Where user passes in a pydantic base model
     """

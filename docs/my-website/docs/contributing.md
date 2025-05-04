@@ -4,7 +4,7 @@ Here's how to run the MishikaLLM UI locally for making changes:
 
 ## 1. Clone the repo 
 ```bash
-git clone https://github.com/BerriAI/mishikallm.git
+git clone https://github.com/skorpland/mishikallm.git
 ```
 
 ## 2. Start the UI + Proxy 

@@ -1852,7 +1852,7 @@ ModelResponse(
 
 :::info
 
-This is an Enterprise only feature [Get Started with Enterprise here](https://github.com/BerriAI/mishikallm/tree/main/enterprise)
+This is an Enterprise only feature [Get Started with Enterprise here](https://github.com/skorpland/mishikallm/tree/main/enterprise)
 
 :::
 

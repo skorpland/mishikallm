@@ -18,7 +18,7 @@ Limitations of MishikaLLM Managed Files:
 - Only works for `/chat/completions` requests. 
 - Assumes just 1 model configured per model_name.
 
-Follow [here](https://github.com/BerriAI/mishikallm/discussions/9632) for multiple models, batches support.
+Follow [here](https://github.com/skorpland/mishikallm/discussions/9632) for multiple models, batches support.
 
 ### 1. Setup config.yaml
 

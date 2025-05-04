@@ -95,7 +95,7 @@ if __name__ == "__main__":
     github_token = os.getenv("GITHUB_TOKEN")
     g = Github(github_token)
     repo = g.get_repo(
-        "BerriAI/mishikallm"
+        "skorpland/mishikallm"
     )  # Replace with your repository's username and name
     latest_release = repo.get_latest_release()
     print("got latest release: ", latest_release)

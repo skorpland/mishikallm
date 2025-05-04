@@ -39,7 +39,7 @@ def test_calculate_usage():
     """
     Do not include cache_creation_input_tokens in the prompt_tokens
 
-    Fixes https://github.com/BerriAI/mishikallm/issues/9812
+    Fixes https://github.com/skorpland/mishikallm/issues/9812
     """
     config = AnthropicConfig()
 

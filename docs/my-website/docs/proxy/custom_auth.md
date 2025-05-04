@@ -40,7 +40,7 @@ general_settings:
   custom_auth: custom_auth.user_api_key_auth
 ```
 
-[**Implementation Code**](https://github.com/BerriAI/mishikallm/blob/caf2a6b279ddbe89ebd1d8f4499f65715d684851/mishikallm/proxy/utils.py#L122)
+[**Implementation Code**](https://github.com/skorpland/mishikallm/blob/caf2a6b279ddbe89ebd1d8f4499f65715d684851/mishikallm/proxy/utils.py#L122)
 
 #### 3. Start the proxy
 ```shell
