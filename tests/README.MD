@@ -1,0 +1,9 @@
+**In total mishikallm runs 1000+ tests** 
+
+[02/20/2025] Update:
+
+To make it easier to contribute and map what behavior is tested,
+
+we've started mapping the mishikallm directory in `tests/mishikallm` 
+
+This folder can only run mock tests.

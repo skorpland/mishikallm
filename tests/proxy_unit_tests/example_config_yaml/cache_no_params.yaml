@@ -1,0 +1,7 @@
+model_list: 
+  - model_name: "openai-model"
+    mishikallm_params: 
+      model: "gpt-3.5-turbo"
+
+mishikallm_settings:
+  cache: True
