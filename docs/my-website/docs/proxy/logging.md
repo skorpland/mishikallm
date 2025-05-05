@@ -1439,7 +1439,7 @@ docker run \
     -v $(pwd)/mishikallm_config.yaml:/app/config.yaml \
     -e USE_DDTRACE=true \
     -p 4000:4000 \
-    ghcr.io/berriai/mishikallm:main-latest \
+    ghcr.io/skorpland/mishikallm:main-latest \
     --config /app/config.yaml --detailed_debug
 ```
 

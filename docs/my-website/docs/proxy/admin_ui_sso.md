@@ -245,7 +245,7 @@ Set `UI_LOGO_PATH` on your env. We recommend using a hosted image, it's a lot ea
 
 Example setting Hosted image
 ```shell
-UI_LOGO_PATH="https://mishikallm-logo-aws-marketplace.s3.us-west-2.amazonaws.com/berriai-logo-github.png"
+UI_LOGO_PATH="https://mishikallm-logo-aws-marketplace.s3.us-west-2.amazonaws.com/skorpland-logo-github.png"
 ```
 
 Example setting a local image (on your container)

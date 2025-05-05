@@ -1,4 +1,4 @@
-param imageName string = 'ghcr.io/berriai/mishikallm:main-latest'
+param imageName string = 'ghcr.io/skorpland/mishikallm:main-latest'
 param containerName string = 'mishikallm-container'
 param dnsLabelName string = 'mishikallm'
 param portNumber int = 4000

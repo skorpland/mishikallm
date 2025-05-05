@@ -3372,7 +3372,7 @@ def test_completion_bedrock_titan_null_response():
 #             messages=messages,
 #             temperature=0.2,
 #             max_tokens=80,
-#             api_base="https://openai-proxy.berriai.repl.co",
+#             api_base="https://openai-proxy.skorpland.repl.co",
 #             custom_llm_provider="openai"
 #         )
 #         print(response)

@@ -3,7 +3,7 @@ services:
     name: openai-proxy
     runtime: image
     image:
-      url: ghcr.io/berriai/mishikallm:main-stable
+      url: ghcr.io/skorpland/mishikallm:main-stable
     envVars:
       - key: PORT
         value: 4000

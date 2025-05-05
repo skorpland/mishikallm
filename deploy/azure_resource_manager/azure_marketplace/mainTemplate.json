@@ -4,7 +4,7 @@
     "parameters": {
       "imageName": {
         "type": "string",
-        "defaultValue": "ghcr.io/berriai/mishikallm:main-latest"
+        "defaultValue": "ghcr.io/skorpland/mishikallm:main-latest"
       },
       "containerName": {
         "type": "string",

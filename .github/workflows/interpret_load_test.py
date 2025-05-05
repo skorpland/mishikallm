@@ -61,7 +61,7 @@ def _get_docker_run_command_stable_release(release_version):
 docker run \\
 -e STORE_MODEL_IN_DB=True \\
 -p 4000:4000 \\
-ghcr.io/berriai/mishikallm:mishikallm_stable_release_branch-{release_version}
+ghcr.io/skorpland/mishikallm:mishikallm_stable_release_branch-{release_version}
 ```
     """
 
@@ -75,7 +75,7 @@ def _get_docker_run_command(release_version):
 docker run \\
 -e STORE_MODEL_IN_DB=True \\
 -p 4000:4000 \\
-ghcr.io/berriai/mishikallm:main-{release_version}
+ghcr.io/skorpland/mishikallm:main-{release_version}
 ```
     """
 

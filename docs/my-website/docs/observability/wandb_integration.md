@@ -16,7 +16,7 @@ Weights & Biases helps AI developers build better models faster https://wandb.ai
 <Image img={require('../../img/wandb.png')} />
 
 :::info
-We want to learn how we can make the callbacks better! Meet the MishikaLLM [founders](https://calendly.com/d/4mp-gd3-k5k/berriai-1-1-onboarding-mishikallm-hosted-version) or
+We want to learn how we can make the callbacks better! Meet the MishikaLLM [founders](https://calendly.com/d/4mp-gd3-k5k/skorpland-1-1-onboarding-mishikallm-hosted-version) or
 join our [discord](https://discord.gg/wuPM9dRgDw)
 ::: 
 
@@ -55,7 +55,7 @@ response = mishikallm.completion(
 
 ## Support & Talk to Founders
 
-- [Schedule Demo 👋](https://calendly.com/d/4mp-gd3-k5k/berriai-1-1-onboarding-mishikallm-hosted-version)
+- [Schedule Demo 👋](https://calendly.com/d/4mp-gd3-k5k/skorpland-1-1-onboarding-mishikallm-hosted-version)
 - [Community Discord 💭](https://discord.gg/wuPM9dRgDw)
 - Our numbers 📞 +1 (770) 8783-106 / ‭+1 (412) 618-6238‬
 - Our emails ✉️ ishaan@berri.ai / krrish@berri.ai

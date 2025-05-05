@@ -15,7 +15,7 @@ tests:
           pattern: -mishikallm$
       - equal:
           path: spec.template.spec.containers[0].image
-          value: ghcr.io/berriai/mishikallm-database:test
+          value: ghcr.io/skorpland/mishikallm-database:test
   - it: should work with tolerations
     template: deployment.yaml
     set:

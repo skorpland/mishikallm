@@ -11,46 +11,51 @@ FROM $MISHIKALLM_BUILD_IMAGE AS builder
 WORKDIR /app
 
 # Install build dependencies
-RUN apk add --no-cache gcc python3-dev musl-dev
+RUN apk add --no-cache gcc python3-dev musl-dev libffi-dev openssl-dev
 
+# Upgrade pip and install build tools
 RUN pip install --upgrade pip && \
-    pip install build
+    pip install build poetry
 
-# Copy the current directory contents into the container at /app
+# Copy only necessary files for building first
+COPY pyproject.toml poetry.lock ./
+
+# Install project dependencies
+RUN poetry install --no-root
+
+# Copy the rest of the application
 COPY . .
 
 # Build the package
-RUN rm -rf dist/* && python -m build
-
-# There should be only one wheel file now, assume the build only creates one
-RUN ls -1 dist/*.whl | head -1
-
-# Install the package
-RUN pip install dist/*.whl
-
-# install dependencies as wheels
-RUN pip wheel --no-cache-dir --wheel-dir=/wheels/ -r requirements.txt
+RUN mkdir -p dist && \
+    python -m build --wheel --outdir dist/
 
 # Runtime stage
 FROM $MISHIKALLM_RUNTIME_IMAGE AS runtime
 
 # Update dependencies and clean up
-RUN apk upgrade --no-cache
+RUN apk upgrade --no-cache && \
+    apk add --no-cache libstdc++
 
 WORKDIR /app
 
-# Copy the built wheel from the builder stage to the runtime stage; assumes only one wheel file is present
+# Create docker directory first
+RUN mkdir -p /app/docker
+
+# Copy the built wheel from the builder stage
 COPY --from=builder /app/dist/*.whl .
-COPY --from=builder /wheels/ /wheels/
 
-# Install the built wheel using pip; again using a wildcard if it's the only file
-RUN pip install *.whl /wheels/* --no-index --find-links=/wheels/ && rm -f *.whl && rm -rf /wheels
+# Copy entrypoint scripts (verify these exist in your host machine)
+COPY entrypoint.sh prod_entrypoint.sh /app/docker/
 
-RUN chmod +x docker/entrypoint.sh
-RUN chmod +x docker/prod_entrypoint.sh
+# Install the built wheel
+RUN pip install --no-cache-dir *.whl && \
+    rm -f *.whl && \
+    chmod +x /app/docker/entrypoint.sh && \
+    chmod +x /app/docker/prod_entrypoint.sh
 
 EXPOSE 4000/tcp
 
 # Set your entrypoint and command
-ENTRYPOINT ["docker/prod_entrypoint.sh"]
+ENTRYPOINT ["/app/docker/prod_entrypoint.sh"]
 CMD ["--port", "4000"]

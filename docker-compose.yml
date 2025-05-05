@@ -5,7 +5,7 @@ services:
       context: .
       args:
         target: runtime
-    image: ghcr.io/berriai/mishikallm:main-stable
+    image: ghcr.io/skorpland/mishikallm:main-stable
     #########################################
     ## Uncomment these lines to start proxy with a config.yaml file ##
     # volumes:

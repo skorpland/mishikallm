@@ -20,7 +20,7 @@ End-to-End tutorial for MishikaLLM Proxy to:
 <TabItem value="docker" label="Docker">
 
 ```
-docker pull ghcr.io/berriai/mishikallm:main-latest
+docker pull ghcr.io/skorpland/mishikallm:main-latest
 ```
 
 [**See all docker images**](https://github.com/orgs/skorpland/packages)
@@ -89,7 +89,7 @@ docker run \
     -e AZURE_API_KEY=d6*********** \
     -e AZURE_API_BASE=https://openai-***********/ \
     -p 4000:4000 \
-    ghcr.io/berriai/mishikallm:main-latest \
+    ghcr.io/skorpland/mishikallm:main-latest \
     --config /app/config.yaml --detailed_debug
 
 # RUNNING on http://0.0.0.0:4000
@@ -237,7 +237,7 @@ docker run \
     -e AZURE_API_KEY=d6*********** \
     -e AZURE_API_BASE=https://openai-***********/ \
     -p 4000:4000 \
-    ghcr.io/berriai/mishikallm:main-latest \
+    ghcr.io/skorpland/mishikallm:main-latest \
     --config /app/config.yaml --detailed_debug
 ```
 
@@ -440,7 +440,7 @@ MishikaLLM Proxy uses the [MishikaLLM Python SDK](https://docs.21t.cc/docs/routi
 
 ## Support & Talk with founders
 
-- [Schedule Demo 👋](https://calendly.com/d/4mp-gd3-k5k/berriai-1-1-onboarding-mishikallm-hosted-version)
+- [Schedule Demo 👋](https://calendly.com/d/4mp-gd3-k5k/skorpland-1-1-onboarding-mishikallm-hosted-version)
 
 - [Community Discord 💭](https://discord.gg/wuPM9dRgDw)
 

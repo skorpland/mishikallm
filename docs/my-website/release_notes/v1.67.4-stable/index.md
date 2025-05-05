@@ -30,7 +30,7 @@ import TabItem from '@theme/TabItem';
 docker run
 -e STORE_MODEL_IN_DB=True
 -p 4000:4000
-ghcr.io/berriai/mishikallm:main-v1.67.4-stable
+ghcr.io/skorpland/mishikallm:main-v1.67.4-stable
 ```
 </TabItem>
 

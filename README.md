@@ -16,7 +16,7 @@
     <a href="https://pypi.org/project/mishikallm/" target="_blank">
         <img src="https://img.shields.io/pypi/v/mishikallm.svg" alt="PyPI Version">
     </a>
-    <a href="https://www.ycombinator.com/companies/berriai">
+    <a href="https://www.ycombinator.com/companies/skorpland">
         <img src="https://img.shields.io/badge/Y%20Combinator-W23-orange?style=flat-square" alt="Y Combinator W23">
     </a>
     <a href="https://wa.link/huol9n">

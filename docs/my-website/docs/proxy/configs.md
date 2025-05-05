@@ -645,7 +645,7 @@ docker run --name mishikallm-proxy \
    -e MISHIKALLM_CONFIG_BUCKET_OBJECT_KEY="<object_key>> \
    -e MISHIKALLM_CONFIG_BUCKET_TYPE="gcs" \
    -p 4000:4000 \
-   ghcr.io/berriai/mishikallm-database:main-latest --detailed_debug
+   ghcr.io/skorpland/mishikallm-database:main-latest --detailed_debug
 ```
 
 </TabItem>
@@ -666,7 +666,7 @@ docker run --name mishikallm-proxy \
    -e MISHIKALLM_CONFIG_BUCKET_NAME=<bucket_name> \
    -e MISHIKALLM_CONFIG_BUCKET_OBJECT_KEY="<object_key>> \
    -p 4000:4000 \
-   ghcr.io/berriai/mishikallm-database:main-latest
+   ghcr.io/skorpland/mishikallm-database:main-latest
 ```
 </TabItem>
 </Tabs>

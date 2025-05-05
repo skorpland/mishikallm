@@ -59,11 +59,11 @@ docker run \
     -e AZURE_API_KEY=d6*********** \
     -e AZURE_API_BASE=https://openai-***********/ \
     -p 4000:4000 \
-    ghcr.io/berriai/mishikallm:main-latest \
+    ghcr.io/skorpland/mishikallm:main-latest \
     --config /app/config.yaml --detailed_debug
 ```
 
-Get Latest Image 👉 [here](https://github.com/berriai/mishikallm/pkgs/container/mishikallm)
+Get Latest Image 👉 [here](https://github.com/skorpland/mishikallm/pkgs/container/mishikallm)
 
 #### Step 3. TEST Request
 
@@ -89,12 +89,12 @@ See all supported CLI args [here](https://docs.21t.cc/docs/proxy/cli):
 
 Here's how you can run the docker image and pass your config to `mishikallm`
 ```shell
-docker run ghcr.io/berriai/mishikallm:main-latest --config your_config.yaml
+docker run ghcr.io/skorpland/mishikallm:main-latest --config your_config.yaml
 ```
 
 Here's how you can run the docker image and start mishikallm on port 8002 with `num_workers=8`
 ```shell
-docker run ghcr.io/berriai/mishikallm:main-latest --port 8002 --num_workers 8
+docker run ghcr.io/skorpland/mishikallm:main-latest --port 8002 --num_workers 8
 ```
 
 
@@ -102,7 +102,7 @@ docker run ghcr.io/berriai/mishikallm:main-latest --port 8002 --num_workers 8
 
 ```shell
 # Use the provided base image
-FROM ghcr.io/berriai/mishikallm:main-latest
+FROM ghcr.io/skorpland/mishikallm:main-latest
 
 # Set the working directory to /app
 WORKDIR /app
@@ -236,7 +236,7 @@ spec:
     spec:
       containers:
       - name: mishikallm
-        image: ghcr.io/berriai/mishikallm:main-latest # it is recommended to fix a version generally
+        image: ghcr.io/skorpland/mishikallm:main-latest # it is recommended to fix a version generally
         ports:
         - containerPort: 4000
         volumeMounts:
@@ -270,9 +270,9 @@ Use this when you want to use mishikallm helm chart as a dependency for other ch
 #### Step 1. Pull the mishikallm helm chart
 
 ```bash
-helm pull oci://ghcr.io/berriai/mishikallm-helm
+helm pull oci://ghcr.io/skorpland/mishikallm-helm
 
-# Pulled: ghcr.io/berriai/mishikallm-helm:0.1.2
+# Pulled: ghcr.io/skorpland/mishikallm-helm:0.1.2
 # Digest: sha256:7d3ded1c99c1597f9ad4dc49d84327cf1db6e0faa0eeea0c614be5526ae94e2a
 ```
 
@@ -331,7 +331,7 @@ Requirements:
 We maintain a [separate Dockerfile](https://github.com/skorpland/mishikallm/pkgs/container/mishikallm-database) for reducing build time when running MishikaLLM proxy with a connected Postgres Database 
 
 ```shell
-docker pull ghcr.io/berriai/mishikallm-database:main-latest
+docker pull ghcr.io/skorpland/mishikallm-database:main-latest
 ```
 
 ```shell
@@ -342,7 +342,7 @@ docker run \
     -e AZURE_API_KEY=d6*********** \
     -e AZURE_API_BASE=https://openai-***********/ \
     -p 4000:4000 \
-    ghcr.io/berriai/mishikallm-database:main-latest \
+    ghcr.io/skorpland/mishikallm-database:main-latest \
     --config /app/config.yaml --detailed_debug
 ```
 
@@ -370,7 +370,7 @@ spec:
     spec:
       containers:
         - name: mishikallm-container
-          image: ghcr.io/berriai/mishikallm:main-latest
+          image: ghcr.io/skorpland/mishikallm:main-latest
           imagePullPolicy: Always
           env:
             - name: AZURE_API_KEY
@@ -506,9 +506,9 @@ Use this when you want to use mishikallm helm chart as a dependency for other ch
 #### Step 1. Pull the mishikallm helm chart
 
 ```bash
-helm pull oci://ghcr.io/berriai/mishikallm-helm
+helm pull oci://ghcr.io/skorpland/mishikallm-helm
 
-# Pulled: ghcr.io/berriai/mishikallm-helm:0.1.2
+# Pulled: ghcr.io/skorpland/mishikallm-helm:0.1.2
 # Digest: sha256:7d3ded1c99c1597f9ad4dc49d84327cf1db6e0faa0eeea0c614be5526ae94e2a
 ```
 
@@ -565,7 +565,7 @@ router_settings:
 Start docker container with config
 
 ```shell
-docker run ghcr.io/berriai/mishikallm:main-latest --config your_config.yaml
+docker run ghcr.io/skorpland/mishikallm:main-latest --config your_config.yaml
 ```
 
 ### Deploy with Database + Redis
@@ -600,7 +600,7 @@ Start `mishikallm-database`docker container with config
 docker run --name mishikallm-proxy \
 -e DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<dbname> \
 -p 4000:4000 \
-ghcr.io/berriai/mishikallm-database:main-latest --config your_config.yaml
+ghcr.io/skorpland/mishikallm-database:main-latest --config your_config.yaml
 ```
 
 ###  (Non Root) - without Internet Connection
@@ -610,7 +610,7 @@ By default `prisma generate` downloads [prisma's engine binaries](https://www.pr
 Use this docker image to deploy mishikallm with pre-generated prisma binaries.
 
 ```bash
-docker pull ghcr.io/berriai/mishikallm-non_root:main-stable
+docker pull ghcr.io/skorpland/mishikallm-non_root:main-stable
 ```
 
 [Published Docker Image link](https://github.com/skorpland/mishikallm/pkgs/container/mishikallm-non_root)
@@ -643,7 +643,7 @@ Dockerfile
 
 ```shell
 # Use the provided base image
-FROM ghcr.io/berriai/mishikallm:main-latest
+FROM ghcr.io/skorpland/mishikallm:main-latest
 
 # Set the working directory to /app
 WORKDIR /app
@@ -722,7 +722,7 @@ Use this, If you need to set ssl certificates for your on prem mishikallm proxy
 Pass `ssl_keyfile_path` (Path to the SSL keyfile) and `ssl_certfile_path` (Path to the SSL certfile) when starting mishikallm proxy 
 
 ```shell
-docker run ghcr.io/berriai/mishikallm:main-latest \
+docker run ghcr.io/skorpland/mishikallm:main-latest \
     --ssl_keyfile_path ssl_test/keyfile.key \
     --ssl_certfile_path ssl_test/certfile.crt
 ```
@@ -737,7 +737,7 @@ Step 1. Build your custom docker image with hypercorn
 
 ```shell
 # Use the provided base image
-FROM ghcr.io/berriai/mishikallm:main-latest
+FROM ghcr.io/skorpland/mishikallm:main-latest
 
 # Set the working directory to /app
 WORKDIR /app
@@ -801,7 +801,7 @@ docker run --name mishikallm-proxy \
    -e MISHIKALLM_CONFIG_BUCKET_OBJECT_KEY="<object_key>> \
    -e MISHIKALLM_CONFIG_BUCKET_TYPE="gcs" \
    -p 4000:4000 \
-   ghcr.io/berriai/mishikallm-database:main-latest --detailed_debug
+   ghcr.io/skorpland/mishikallm-database:main-latest --detailed_debug
 ```
 
 </TabItem>
@@ -822,7 +822,7 @@ docker run --name mishikallm-proxy \
    -e MISHIKALLM_CONFIG_BUCKET_NAME=<bucket_name> \
    -e MISHIKALLM_CONFIG_BUCKET_OBJECT_KEY="<object_key>> \
    -p 4000:4000 \
-   ghcr.io/berriai/mishikallm-database:main-latest
+   ghcr.io/skorpland/mishikallm-database:main-latest
 ```
 </TabItem>
 </Tabs>
@@ -915,7 +915,7 @@ Run the following command, replacing `<database_url>` with the value you copied 
 docker run --name mishikallm-proxy \
    -e DATABASE_URL=<database_url> \
    -p 4000:4000 \
-   ghcr.io/berriai/mishikallm-database:main-latest
+   ghcr.io/skorpland/mishikallm-database:main-latest
 ```
 
 #### 4. Access the Application:
@@ -994,7 +994,7 @@ services:
       context: .
       args:
         target: runtime
-    image: ghcr.io/berriai/mishikallm:main-latest
+    image: ghcr.io/skorpland/mishikallm:main-latest
     ports:
       - "4000:4000" # Map the container port to the host, change the host port if necessary
     volumes:
