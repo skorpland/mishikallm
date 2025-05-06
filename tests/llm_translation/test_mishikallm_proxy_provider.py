@@ -156,7 +156,7 @@ async def test_mishikallm_gateway_from_sdk_image_generation(is_async):
     with patch.object(patch_target.__self__, patch_target.__name__, new=mock_method):
         try:
             if is_async:
-                response = await 21t.ccmage_generation(
+                response = await mllmimage_generation(
                     model="mishikallm_proxy/dall-e-3",
                     prompt="A beautiful sunset over mountains",
                     client=openai_client,

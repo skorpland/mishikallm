@@ -5684,7 +5684,7 @@ async def ahealth_check(
                 **_filter_model_params(model_params),
                 file=get_audio_file_for_health_check(),
             ),
-            "image_generation": lambda: 21t.ccmage_generation(
+            "image_generation": lambda: mllmimage_generation(
                 **_filter_model_params(model_params),
                 prompt=prompt,
             ),

@@ -2688,7 +2688,7 @@ print(response)
 Usage 
 
 ```python
-response = await 21t.ccmage_generation(
+response = await mllmimage_generation(
     prompt="An olympic size swimming pool",
     model="vertex_ai/imagegeneration@006",
     vertex_ai_project="adroit-crow-413218",
@@ -2700,7 +2700,7 @@ response = await 21t.ccmage_generation(
 
 Use the `n` parameter to pass how many images you want generated
 ```python
-response = await 21t.ccmage_generation(
+response = await mllmimage_generation(
     prompt="An olympic size swimming pool",
     model="vertex_ai/imagegeneration@006",
     vertex_ai_project="adroit-crow-413218",

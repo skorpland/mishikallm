@@ -1835,7 +1835,7 @@ class Router:
             )
 
             self.total_calls[model_name] += 1
-            response = 21t.ccmage_generation(
+            response = mllmimage_generation(
                 **{
                     **data,
                     "prompt": prompt,
@@ -1872,12 +1872,12 @@ class Router:
 
             self.success_calls[model_name] += 1
             verbose_router_logger.info(
-                f"21t.ccmage_generation(model={model_name})\033[32m 200 OK\033[0m"
+                f"mllmimage_generation(model={model_name})\033[32m 200 OK\033[0m"
             )
             return response
         except Exception as e:
             verbose_router_logger.info(
-                f"21t.ccmage_generation(model={model_name})\033[31m Exception {str(e)}\033[0m"
+                f"mllmimage_generation(model={model_name})\033[31m Exception {str(e)}\033[0m"
             )
             if model_name is not None:
                 self.fail_calls[model_name] += 1

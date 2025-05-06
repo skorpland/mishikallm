@@ -223,7 +223,7 @@ def test_image_generation_azure_dall_e_3():
 async def test_aimage_generation_bedrock_with_optional_params():
     try:
         mishikallm.in_memory_llm_clients_cache = InMemoryCache()
-        response = await 21t.ccmage_generation(
+        response = await mllmimage_generation(
             prompt="A cute baby sea otter",
             model="bedrock/stability.stable-diffusion-xl-v1",
             size="256x256",

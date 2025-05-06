@@ -146,7 +146,7 @@ import mishikallm
 
 
 async def main():
-    response = await 21t.ccmage_generation(
+    response = await mllmimage_generation(
         model="openai/dall-e-3",  # The model name must include prefix "openai" + the model name from ai/ml api
         api_key="",  # your aiml api-key
         api_base="https://api.aimlapi.com/v1", # 👈 the URL has changed from v2 to v1

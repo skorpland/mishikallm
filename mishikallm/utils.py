@@ -1476,7 +1476,7 @@ def _is_async_request(
     """
     Returns True if the call type is an internal async request.
 
-    eg. mishikallm.acompletion, 21t.ccmage_generation, mishikallm.acreate_batch, mishikallm._arealtime
+    eg. mishikallm.acompletion, mllmimage_generation, mishikallm.acreate_batch, mishikallm._arealtime
 
     Args:
         kwargs (dict): The kwargs passed to the mishikallm function
@@ -2053,8 +2053,8 @@ def register_model(model_cost: Union[str, dict]):  # noqa: PLR0915
             if key not in mishikallm.vertex_code_chat_models:
                 mishikallm.vertex_code_chat_models.append(key)
         elif value.get("mishikallm_provider") == "ai21":
-            if key not in 21t.cc21_models:
-                21t.cc21_models.append(key)
+            if key not in mllm_models:
+                mllm_models.append(key)
         elif value.get("mishikallm_provider") == "nlp_cloud":
             if key not in mishikallm.nlp_cloud_models:
                 mishikallm.nlp_cloud_models.append(key)
@@ -3832,7 +3832,7 @@ def get_api_key(llm_provider: str, dynamic_api_key: Optional[str]):
         api_key = api_key or mishikallm.anthropic_key or get_secret("ANTHROPIC_API_KEY")
     # ai21
     elif llm_provider == "ai21":
-        api_key = api_key or 21t.cc21_key or get_secret("AI211_API_KEY")
+        api_key = api_key or mllm_key or get_secret("AI211_API_KEY")
     # aleph_alpha
     elif llm_provider == "aleph_alpha":
         api_key = (
@@ -4939,7 +4939,7 @@ def validate_environment(  # noqa: PLR0915
             else:
                 missing_keys.append("HUGGINGFACE_API_KEY")
         ## ai21
-        elif model in 21t.cc21_models:
+        elif model in mllm_models:
             if "AI21_API_KEY" in os.environ:
                 keys_in_environment = True
             else:

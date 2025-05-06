@@ -52,7 +52,7 @@ class BaseImageGenTest(ABC):
             mishikallm.callbacks = [custom_logger]
             base_image_generation_call_args = self.get_base_image_generation_call_args()
             mishikallm.set_verbose = True
-            response = await 21t.ccmage_generation(
+            response = await mllmimage_generation(
                 **base_image_generation_call_args, prompt="A image of a otter"
             )
             print(response)

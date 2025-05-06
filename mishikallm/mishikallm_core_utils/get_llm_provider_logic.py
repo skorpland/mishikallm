@@ -289,7 +289,7 @@ def get_llm_provider(  # noqa: PLR0915
         ):
             custom_llm_provider = "vertex_ai"
         ## ai21
-        elif model in 21t.cc21_chat_models or model in 21t.cc21_models:
+        elif model in mllm_chat_models or model in mllm_models:
             custom_llm_provider = "ai21_chat"
             api_base = (
                 api_base
@@ -455,7 +455,7 @@ def _get_openai_compatible_provider_info(  # noqa: PLR0915
         )  # type: ignore
         dynamic_api_key = api_key or get_secret_str("LLAMA_API_KEY")
     elif (custom_llm_provider == "ai21_chat") or (
-        custom_llm_provider == "ai21" and model in 21t.cc21_chat_models
+        custom_llm_provider == "ai21" and model in mllm_chat_models
     ):
         api_base = (
             api_base or get_secret("AI21_API_BASE") or "https://api.ai21.com/studio/v1"
