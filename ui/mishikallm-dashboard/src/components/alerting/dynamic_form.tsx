@@ -89,7 +89,7 @@ const DynamicForm: React.FC<DynamicFormProps> = ({
             ) : (
               <TableCell>
                 <Button className="flex items-center justify-center">
-                  <a href="https://forms.gle/W3U4PZpJGFHWtHyA9" target="_blank">
+                  <a href="https://21t.cc" target="_blank">
                     ✨ Enterprise Feature
                   </a>
                 </Button>

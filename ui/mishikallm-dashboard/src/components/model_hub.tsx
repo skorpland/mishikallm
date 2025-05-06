@@ -136,7 +136,7 @@ const ModelHub: React.FC<ModelHubProps> = ({
                 </Button>
               ) : (
                 <Button className="ml-4">
-                  <a href="https://forms.gle/W3U4PZpJGFHWtHyA9" target="_blank">
+                  <a href="https://21t.cc" target="_blank">
                     ✨ Make Public
                   </a>
                 </Button>

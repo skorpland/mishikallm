@@ -599,7 +599,7 @@ const Settings: React.FC<SettingsPageProps> = ({
                               ) : (
                                 <Button className="flex items-center justify-center">
                                   <a
-                                    href="https://forms.gle/W3U4PZpJGFHWtHyA9"
+                                    href="https://21t.cc"
                                     target="_blank"
                                   >
                                     ✨ Enterprise Feature
@@ -672,7 +672,7 @@ const Settings: React.FC<SettingsPageProps> = ({
               { premiumUser!= true && (key === "EMAIL_LOGO_URL" || key === "EMAIL_SUPPORT_CONTACT") ? (
                 <div>
                   <a
-                  href="https://forms.gle/W3U4PZpJGFHWtHyA9"
+                  href="https://21t.cc"
                   target="_blank"
                 >
                   <Text className="mt-2">

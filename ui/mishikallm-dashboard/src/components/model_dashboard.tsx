@@ -1473,7 +1473,7 @@ const ModelDashboard: React.FC<ModelDashboardProps> = ({
                           <Title>✨ Rate Limit Errors by Deployment</Title>
                           <p className="mb-2 text-gray-500 italic text-[12px]">Upgrade to see exceptions for all deployments</p>
                           <Button variant="primary" className="mb-2">
-                            <a href="https://forms.gle/W3U4PZpJGFHWtHyA9" target="_blank">
+                            <a href="https://21t.cc" target="_blank">
                               Get Free Trial
                             </a>
                           </Button>
