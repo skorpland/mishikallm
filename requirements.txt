@@ -1,6 +1,7 @@
 # MISHIKALLM PROXY DEPENDENCIES #
 anyio==4.5.0 # openai + http req.
-httpx==0.23.0 # Pin Httpx dependency
+#httpx==0.23.0 MCP 1.5 needs 0.27.0
+httpx>=0.27.0,<1
 openai==1.68.2  # openai req. 
 fastapi==0.115.5 # server dep
 backoff==2.2.1 # server dep
@@ -51,5 +52,4 @@ tenacity==8.2.3  # for retrying requests, when mishikallm.num_retries set
 pydantic==2.10.2 # proxy + openai req.
 jsonschema==4.22.0 # validating json schema
 websockets==13.1.0 # for realtime API
-httpx==0.23.0
 ####

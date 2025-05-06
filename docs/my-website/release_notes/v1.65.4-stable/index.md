@@ -3,11 +3,11 @@ title: v1.65.4-stable
 slug: v1.65.4-stable
 date: 2025-04-05T10:00:00
 authors:
-  - name: Krrish Dholakia
+  - name: Sandeep Kumar
     title: CEO, MishikaLLM
     url: https://www.linkedin.com/in/krish-d/
     image_url: https://media.licdn.com/dms/image/v2/D4D03AQGrlsJ3aqpHmQ/profile-displayphoto-shrink_400_400/B4DZSAzgP7HYAg-/0/1737327772964?e=1749686400&v=beta&t=Hkl3U8Ps0VtvNxX0BNNq24b4dtX5wQaPFp6oiKCIHD8
-  - name: Ishaan Jaffer
+  - name: Sandeep Kumar
     title: CTO, MishikaLLM
     url: https://www.linkedin.com/in/reffajnaahsi/
     image_url: https://pbs.twimg.com/profile_images/1613813310264340481/lz54oEiB_400x400.jpg

@@ -20,7 +20,7 @@ Documentation = "https://docs.21t.cc"
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0, !=3.9.7"
-httpx = ">=0.23.0"
+httpx = ">=0.27.0"
 openai = ">=1.68.2, <1.76.0"
 python-dotenv = ">=0.2.0"
 tiktoken = ">=0.7.0"

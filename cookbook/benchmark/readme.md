@@ -178,4 +178,4 @@ Benchmark Results for 'When will skorpland IPO?':
 ```
 
 ## Support 
-**🤝 Schedule a 1-on-1 Session:** Book a [1-on-1 session](https://calendly.com/d/4mp-gd3-k5k/mishikallm-1-1-onboarding-chat) with Krrish and Ishaan, the founders, to discuss any issues, provide feedback, or explore how we can improve MishikaLLM for you.
+**🤝 Schedule a 1-on-1 Session:** Book a [1-on-1 session](https://calendly.com/d/4mp-gd3-k5k/mishikallm-1-1-onboarding-chat) with our team, the founders, to discuss any issues, provide feedback, or explore how we can improve MishikaLLM for you.
