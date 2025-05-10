@@ -2,29 +2,9 @@
         🚅 MishikaLLM
     </h1>
     <p align="center">
-        <p align="center">
-        <a href="https://render.com/deploy?repo=https://github.com/skorpland/mishikallm" target="_blank" rel="nofollow"><img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render"></a>
-        <a href="https://railway.app/template/HLP0Ub?referralCode=jch2ME">
-          <img src="https://railway.app/button.svg" alt="Deploy on Railway">
-        </a>
-        </p>
         <p align="center">Call all LLM APIs using the OpenAI format [Bedrock, Huggingface, VertexAI, TogetherAI, Azure, OpenAI, Groq etc.]
         <br>
     </p>
-<h4 align="center"><a href="https://docs.21t.cc/docs/simple_proxy" target="_blank">MishikaLLM Proxy Server (LLM Gateway)</a> | <a href="https://docs.21t.cc/docs/hosted" target="_blank"> Hosted Proxy (Preview)</a> | <a href="https://docs.21t.cc/docs/enterprise"target="_blank">Enterprise Tier</a></h4>
-<h4 align="center">
-    <a href="https://pypi.org/project/mishikallm/" target="_blank">
-        <img src="https://img.shields.io/pypi/v/mishikallm.svg" alt="PyPI Version">
-    </a>
-    <a href="https://www.ycombinator.com/companies/skorpland">
-        <img src="https://img.shields.io/badge/Y%20Combinator-W23-orange?style=flat-square" alt="Y Combinator W23">
-    </a>
-    <a href="https://wa.link/huol9n">
-        <img src="https://img.shields.io/static/v1?label=Chat%20on&message=WhatsApp&color=success&logo=WhatsApp&style=flat-square" alt="Whatsapp">
-    </a>
-    <a href="https://discord.gg/wuPM9dRgDw">
-        <img src="https://img.shields.io/static/v1?label=Chat%20on&message=Discord&color=blue&logo=Discord&style=flat-square" alt="Discord">
-    </a>
 </h4>
 
 MishikaLLM manages:
