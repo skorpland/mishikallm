@@ -245,33 +245,6 @@ echo 'MISHIKALLM_SALT_KEY="sk-1234"' > .env
 
 source .env
 
-# Start
-docker-compose up
-```
-
-
-UI on `/ui` on your proxy server
-![ui_3](https://github.com/skorpland/mishikallm/assets/29436595/47c97d5e-b9be-4839-b28c-43d7f4f10033)
-
-Set budgets and rate limits across multiple projects
-`POST /key/generate`
-
-### Request
-
-```shell
-curl 'http://0.0.0.0:4000/key/generate' \
---header 'Authorization: Bearer sk-1234' \
---header 'Content-Type: application/json' \
---data-raw '{"models": ["gpt-3.5-turbo", "gpt-4", "claude-2"], "duration": "20m","metadata": {"user": "ishaan@berri.ai", "team": "core-infra"}}'
-```
-
-### Expected Response
-
-```shell
-{
-    "key": "sk-kdEXbIqZRwEeEiHwdg7sFA", # Bearer token
-    "expires": "2023-11-19T01:38:25.838000+00:00" # datetime object
-}
 ```
 
 ## Supported Providers ([Docs](https://docs.21t.cc/docs/providers))
