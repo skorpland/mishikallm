@@ -1,0 +1,15 @@
+lint.ignore = ["F405", "E402", "E501", "F403"]
+lint.extend-select = ["E501", "PLR0915", "T20"]
+line-length = 120
+exclude = ["mishikallm/types/*", "mishikallm/__init__.py", "mishikallm/proxy/example_config_yaml/*", "tests/*"]
+
+
+[lint.per-file-ignores]
+"mishikallm/main.py" = ["F401"]
+"mishikallm/utils.py" = ["F401"]
+"mishikallm/proxy/proxy_server.py" = ["F401"]
+"mishikallm/caching/__init__.py" = ["F401"]
+"mishikallm/llms/anthropic/chat/__init__.py" = ["F401"]
+"mishikallm/llms/azure_ai/embed/__init__.py" = ["F401"]
+"mishikallm/llms/azure_ai/rerank/__init__.py" = ["F401"]
+"mishikallm/llms/bedrock/chat/__init__.py" = ["F401"]

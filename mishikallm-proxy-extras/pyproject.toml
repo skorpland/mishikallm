@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "mishikallm-proxy-extras"
+version = "0.1.15"
+description = "Additional files for the MishikaLLM Proxy. Reduces the size of the main mishikallm package."
+authors = ["skorpland"]
+readme = "README.md"
+
+
+[tool.poetry.urls]
+homepage = "https://21t.cc"
+Homepage = "https://21t.cc"
+repository = "https://github.com/skorpland/mishikallm"
+Repository = "https://github.com/skorpland/mishikallm"
+documentation = "https://docs.21t.cc"
+Documentation = "https://docs.21t.cc"
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0, !=3.9.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.commitizen]
+version = "0.1.15"
+version_files = [
+    "pyproject.toml:version",
+    "../requirements.txt:mishikallm-proxy-extras==",
+    "../pyproject.toml:mishikallm-proxy-extras = {version = \""
+]

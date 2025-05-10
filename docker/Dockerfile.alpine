@@ -1,0 +1,61 @@
+# Base image for building
+ARG MISHIKALLM_BUILD_IMAGE=python:3.11-alpine
+
+# Runtime image
+ARG MISHIKALLM_RUNTIME_IMAGE=python:3.11-alpine
+
+# Builder stage
+FROM $MISHIKALLM_BUILD_IMAGE AS builder
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Install build dependencies
+RUN apk add --no-cache gcc python3-dev musl-dev libffi-dev openssl-dev
+
+# Upgrade pip and install build tools
+RUN pip install --upgrade pip && \
+    pip install build poetry
+
+# Copy only necessary files for building first
+COPY pyproject.toml poetry.lock ./
+
+# Install project dependencies
+RUN poetry install --no-root
+
+# Copy the rest of the application
+COPY . .
+
+# Build the package
+RUN mkdir -p dist && \
+    python -m build --wheel --outdir dist/
+
+# Runtime stage
+FROM $MISHIKALLM_RUNTIME_IMAGE AS runtime
+
+# Update dependencies and clean up
+RUN apk upgrade --no-cache && \
+    apk add --no-cache libstdc++
+
+WORKDIR /app
+
+# Create docker directory first
+RUN mkdir -p /app/docker
+
+# Copy the built wheel from the builder stage
+COPY --from=builder /app/dist/*.whl .
+
+# Copy entrypoint scripts (verify these exist in your host machine)
+COPY entrypoint.sh prod_entrypoint.sh /app/docker/
+
+# Install the built wheel
+RUN pip install --no-cache-dir *.whl && \
+    rm -f *.whl && \
+    chmod +x /app/docker/entrypoint.sh && \
+    chmod +x /app/docker/prod_entrypoint.sh
+
+EXPOSE 4000/tcp
+
+# Set your entrypoint and command
+ENTRYPOINT ["/app/docker/prod_entrypoint.sh"]
+CMD ["--port", "4000"]
