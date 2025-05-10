@@ -1,5 +1,5 @@
 <h1 align="center">
-        🚅 MishikaLLM
+         MishikaLLM
     </h1>
     <p align="center">
         <p align="center">Call all LLM APIs using the OpenAI format [Bedrock, Huggingface, VertexAI, TogetherAI, Azure, OpenAI, Groq etc.]
