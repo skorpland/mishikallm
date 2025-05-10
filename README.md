@@ -331,17 +331,6 @@ This covers:
 - ✅ **Secure access with Single Sign-On**
 
 
-### Services
-1. Setup .env file in root
-2. Run dependant services `docker-compose up db prometheus`
-
-### Backend
-1. (In root) create virtual environment `python -m venv .venv`
-2. Activate virtual environment `source .venv/bin/activate`
-3. Install dependencies `pip install -e ".[all]"`
-4. Start proxy backend `uvicorn mishikallm.proxy.proxy_server:app --host localhost --port 4000 --reload`
-
-### Frontend
-1. Navigate to `ui/mishikallm-dashboard`
-2. Install dependencies `npm install`
-3. Run `npm run dev` to start the dashboard
+### Setup
+1. pip install mishikallm
+2. npm i mishikallm
